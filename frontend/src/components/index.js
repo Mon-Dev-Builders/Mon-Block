@@ -7,3 +7,5 @@ export * from "./Features";
 export * from "./News";
 export * from "./Products";
 export * from "./Video";
+export * from "./ProductsDetail";
+export * from "./Login";

@@ -4,7 +4,7 @@ import {
   Features,
   Footer,
   Header,
-  Products,
+  ProductsDetail,
   Video,
 } from "@/components";
 
@@ -13,7 +13,7 @@ export default function ProductPage() {
     <>
       <Header />
       <Carousel />
-      <Products />
+      <ProductsDetail />
       <Features />
       <Contacts />
       <Video />

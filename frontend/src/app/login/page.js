@@ -1,7 +1,10 @@
+import { Header, LoginContent } from "@/components";
+
 export default function Login() {
   return (
     <>
-      <div>Login Page</div>
+      <Header />
+      <LoginContent />
     </>
   );
 }
