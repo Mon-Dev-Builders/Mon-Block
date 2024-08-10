@@ -14,29 +14,33 @@ export const Carousel = () => {
   });
   return (
     <Container>
-      <div className="h-[749px] bg-black relative overflow-hidden">
+      <div className="h-[36rem] 2xl:h-[749px] bg-black relative overflow-hidden">
         <div
           className={`absolute z-20 bg-gradient-to-r ${
             percent === 0 || percent === 3 ? "from-[#DE2028]" : "from-[#002672]"
-          }  to-transparent top-0 left-0 text-white px-36 py-40 w-full h-full`}
+          }  to-transparent top-0 left-0 text-white px-24 2xl:px-36 py-28 2xl:py-40 w-full h-full`}
         >
-          <p className="text-[96px] leading-tight">ИЛҮҮ ХЯМД</p>
-          <p className="text-[96px]">ИЛҮҮ ЧАНАРТАЙГ</p>
-          <p className="text-[50px] leading-10">ТАНД ХҮРГЭНЭ</p>
+          <p className="text-7xl 2xl:text-8xl leading-snug 2xl:leading-tight">
+            ИЛҮҮ ХЯМД
+          </p>
+          <p className="text-7xl 2xl:text-8xl">ИЛҮҮ ЧАНАРТАЙГ</p>
+          <p className="text-3xl 2xl:text-5xl leading-tight 2xl:leading-10">
+            ТАНД ХҮРГЭНЭ
+          </p>
         </div>
         <div className="absolute bottom-0 mb-12 flex w-full gap-5 justify-center z-30">
           <div
-            className={`w-5 h-5 border-2 rounded-full ${
+            className={`2xl:w-5 w-4 h-4 2xl:h-5 border-2 rounded-full ${
               percent === 0 || percent === 3 ? "bg-white" : null
             }`}
           ></div>
           <div
-            className={`w-5 h-5 border-2 rounded-full ${
+            className={`2xl:w-5 w-4 h-4 2xl:h-5 border-2 rounded-full ${
               percent === 1 ? "bg-white" : null
             }`}
           ></div>
           <div
-            className={`w-5 h-5 border-2 rounded-full ${
+            className={`2xl:w-5 w-4 h-4 2xl:h-5 border-2 rounded-full ${
               percent === 2 ? "bg-white" : null
             }`}
           ></div>

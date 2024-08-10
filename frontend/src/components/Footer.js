@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Container } from "./assets";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
@@ -9,7 +10,16 @@ export const Footer = () => {
       <div className="w-full h-[552px] flex">
         <div className="h-full w-1/3 bg-[#C81127]  pl-[162px] py-24 pr-5 ">
           <div className=" h-full w-full flex flex-col items-start justify-center gap-10 text-white ">
-            <img src="./tsagaan logo 2.png" className="w-[350px] " />
+            <Link href="/">
+              <div
+                className="2xl:w-[23rem] w-64 2xl:h-20 h-14"
+                style={{
+                  backgroundImage: `url("https://res.cloudinary.com/dzm85pldh/image/upload/v1723290770/tsagaanLogo_ffhbhi.png")`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              ></div>
+            </Link>
             <h1 className="text-[45px] font-bold text-[#FFFFFF]">
               +976 9900 0000
             </h1>

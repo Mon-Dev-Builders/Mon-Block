@@ -14,7 +14,7 @@ export const Video = () => {
         style={{ width: "100%", height: "auto", maxWidth: "1920px" }}
         src="https://res.cloudinary.com/dqhguhv7o/video/upload/v1723171042/samples/sea-turtle.mp4"
       /> */}
-      <div className="w-full h-[550px]">
+      <div className="w-full h-[550px] overflow-hidden">
         <video width="100%" height="550" controls preload="none">
           <source src={cloudinaryVideoUrl} type="video/mp4" />
           <track

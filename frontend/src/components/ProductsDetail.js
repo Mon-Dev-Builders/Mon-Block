@@ -11,7 +11,8 @@ const products = [
                   from a Lorem Ipsum passage, and going through the cites of the
                   word in classical literature, discovered the undoubtable
                   source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
-    image: "hongonBlock.png",
+    image:
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290771/hongon.block_i1f41f.png",
   },
   {
     name: "plateBlock",
@@ -24,15 +25,16 @@ const products = [
                   from a Lorem Ipsum passage, and going through the cites of the
                   word in classical literature, discovered the undoubtable
                   source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
-    image: "havtanBlock.png",
+    image:
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
   },
 ];
 export const ProductsDetail = () => {
   return (
     <Container>
-      <div className="flex flex-col items-center py-16">
-        <p className="text-[50px]">БҮТЭЭГДЭХҮҮН</p>
-        <div className="flex flex-col w-full my-32 items-center">
+      <div className="flex flex-col items-center py-12 2xl:py-16">
+        <p className="text-4xl 2xl:text-5xl">БҮТЭЭГДЭХҮҮН</p>
+        <div className="flex flex-col w-full my-24 2xl:my-32 items-center">
           {products.map((product, index) => (
             <div
               key={product.name}
@@ -44,12 +46,14 @@ export const ProductsDetail = () => {
               ) : null}
               <div className="flex gap-16">
                 <div
-                  className="w-[672px] h-[672px] bg-cover bg-center rounded-xl"
+                  className="w-[532px] 2xl:w-[672px] h-[532px] 2xl:h-[672px] bg-cover bg-center rounded-xl"
                   style={{ backgroundImage: `url(${product.image})` }}
                 ></div>
-                <div className="flex flex-col max-w-[915px] h-[672px] text-[30px] font-medium gap-10 ">
-                  <p className="text-[50px]">{product.title}</p>
-                  <p className="text-[30px]">{product.description}</p>
+                <div className="flex flex-col max-w-[684px] 2xl:max-w-[915px] h-[532px] 2xl:h-[672px] text-[30px] font-medium gap-10 ">
+                  <p className="text-4xl 2xl:text-5xl">{product.title}</p>
+                  <p className="text-2xl 2xl:text-3xl text-justify">
+                    {product.description}
+                  </p>
                 </div>
               </div>
             </div>
