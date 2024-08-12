@@ -4,8 +4,8 @@ export const About = () => {
   return (
     <Container>
       <div className="flex flex-col items-center py-16">
-        <p className="text-[50px]">ТОВЧ ТАНИЛЦУУЛГА</p>
-        <div className="flex text-[30px] px-36 flex-col w-full my-32 items-center text-justify">
+        <p className="text-4xl">ТОВЧ ТАНИЛЦУУЛГА</p>
+        <div className="flex text-xl px-36 flex-col w-full my-32 items-center text-justify">
           <p>
             “Айвуун Аргалант” ХХК нь гадаад худалдаа, барилгын материалын
             худалдаа болон барилгын бүх төрлийн үйлчилгээ эрхлэх зорилгоор 2013

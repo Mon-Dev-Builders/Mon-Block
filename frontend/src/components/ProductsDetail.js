@@ -32,9 +32,9 @@ const products = [
 export const ProductsDetail = () => {
   return (
     <Container>
-      <div className="flex flex-col items-center py-12 2xl:py-16">
-        <p className="text-4xl 2xl:text-5xl">БҮТЭЭГДЭХҮҮН</p>
-        <div className="flex flex-col w-full my-24 2xl:my-32 items-center">
+      <div className="flex flex-col items-center py-12">
+        <p className="text-4xl">БҮТЭЭГДЭХҮҮН</p>
+        <div className="flex flex-col w-full my-24 items-center">
           {products.map((product, index) => (
             <div
               key={product.name}
@@ -46,14 +46,12 @@ export const ProductsDetail = () => {
               ) : null}
               <div className="flex gap-16">
                 <div
-                  className="w-[532px] 2xl:w-[672px] h-[532px] 2xl:h-[672px] bg-cover bg-center rounded-xl"
+                  className="w-[532px] h-[532px] bg-cover bg-center rounded-xl"
                   style={{ backgroundImage: `url(${product.image})` }}
                 ></div>
-                <div className="flex flex-col max-w-[684px] 2xl:max-w-[915px] h-[532px] 2xl:h-[672px] text-[30px] font-medium gap-10 ">
-                  <p className="text-4xl 2xl:text-5xl">{product.title}</p>
-                  <p className="text-2xl 2xl:text-3xl text-justify">
-                    {product.description}
-                  </p>
+                <div className="flex flex-col max-w-[684px] h-[532px] text-[30px] font-medium gap-10 ">
+                  <p className="text-4xl">{product.title}</p>
+                  <p className="text-xl text-justify">{product.description}</p>
                 </div>
               </div>
             </div>
