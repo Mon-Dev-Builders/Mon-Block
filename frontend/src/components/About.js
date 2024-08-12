@@ -5,13 +5,13 @@ export const About = () => {
     <Container>
       <div className="flex flex-col items-center py-16">
         <p className="text-4xl">ТОВЧ ТАНИЛЦУУЛГА</p>
-        <div className="flex text-xl px-36 flex-col w-full my-32 items-center text-justify">
+        <div className="flex text-xl px-36 flex-col w-full my-24 items-center text-justify">
           <p>
             “Айвуун Аргалант” ХХК нь гадаад худалдаа, барилгын материалын
             худалдаа болон барилгын бүх төрлийн үйлчилгээ эрхлэх зорилгоор 2013
             онд байгуулагдсан 100% дотоодын хөрөнгө оруулалттай компани юм.
           </p>
-          <ul className="list-disc p-24">
+          <ul className="list-disc px-24 py-12">
             <li>
               2016 он: Барилгын хуурай хольц буюу дотор болон гадна фасадны
               өнгөлгөө болон бүх төрлийн цавууг дотооддоо үйлдвэрлэх судалгаа,

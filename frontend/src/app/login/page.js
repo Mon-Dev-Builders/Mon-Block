@@ -1,10 +1,13 @@
-import { Header, LoginContent } from "@/components";
+import { Footer, Header, LoginContent } from "@/components";
 
 export default function Login() {
   return (
     <>
-      <Header />
-      <LoginContent />
+      <div className="shadow-2xl w-fit m-auto">
+        <Header />
+        <LoginContent />
+        <Footer />
+      </div>
     </>
   );
 }
