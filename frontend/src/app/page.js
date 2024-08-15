@@ -11,13 +11,15 @@ import {
 export default function Home() {
   return (
     <>
-      <Header />
-      <Carousel />
-      <Products />
-      <Contacts />
-      <News />
-      <Video />
-      <Footer />
+      <div className="shadow-2xl w-fit m-auto">
+        <Header />
+        <Carousel />
+        <Products />
+        <Contacts />
+        <News />
+        <Video />
+        <Footer />
+      </div>
     </>
   );
 }

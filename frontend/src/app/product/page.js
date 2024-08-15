@@ -11,13 +11,15 @@ import {
 export default function ProductPage() {
   return (
     <>
-      <Header />
-      <Carousel />
-      <ProductsDetail />
-      <Features />
-      <Contacts />
-      <Video />
-      <Footer />
+      <div className="shadow-2xl w-fit m-auto">
+        <Header />
+        <Carousel />
+        <ProductsDetail />
+        <Features />
+        <Contacts />
+        <Video />
+        <Footer />
+      </div>
     </>
   );
 }
