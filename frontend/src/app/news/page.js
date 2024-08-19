@@ -1,15 +1,10 @@
-import { Carousel, Contacts, Footer, Header, Video } from "@/components";
+import { Carousel, Contacts } from "@/components";
 
 export default function NewsPage() {
   return (
     <>
-      <div className="shadow-2xl w-fit m-auto">
-        <Header />
-        <Carousel />
-        <Contacts />
-        <Video />
-        <Footer />
-      </div>
+      <Carousel />
+      <Contacts />
     </>
   );
 }

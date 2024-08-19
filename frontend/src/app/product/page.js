@@ -1,25 +1,12 @@
-import {
-  Carousel,
-  Contacts,
-  Features,
-  Footer,
-  Header,
-  ProductsDetail,
-  Video,
-} from "@/components";
+import { Carousel, Contacts, Features, ProductsDetail } from "@/components";
 
 export default function ProductPage() {
   return (
     <>
-      <div className="shadow-2xl w-fit m-auto">
-        <Header />
-        <Carousel />
-        <ProductsDetail />
-        <Features />
-        <Contacts />
-        <Video />
-        <Footer />
-      </div>
+      <Carousel />
+      <ProductsDetail />
+      <Features />
+      <Contacts />
     </>
   );
 }

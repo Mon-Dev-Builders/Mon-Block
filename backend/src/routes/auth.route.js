@@ -1,14 +1,7 @@
 const { Router } = require("express");
-const {
-  createAccount,
-  checkAccount,
-  getAllAccounts,
-} = require("../controllers/account.controller");
+const { login, register } = require("../controllers/auth.controller");
 
 const authRouter = Router();
 
-authRouter
-  .post("/login", checkAccount)
-  .post("/register", createAccount)
-  .get("/", getAllAccounts);
+authRouter.post("/login", login).post("/register", register);
 module.exports = { authRouter };

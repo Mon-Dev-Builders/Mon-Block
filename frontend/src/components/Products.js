@@ -1,20 +1,9 @@
+"use client";
 import Link from "next/link";
 import { Container } from "./assets";
-const products = [
-  {
-    name: "lightBlock",
-    title: "Хөнгөн блок",
-    image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290771/hongon.block_i1f41f.png",
-  },
-  {
-    name: "plateBlock",
-    title: "Хавтан блок",
-    image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
-  },
-];
+import { useData } from "./utils/dataProvider";
 export const Products = () => {
+  const { products } = useData();
   return (
     <Container>
       <div className="flex flex-col items-center gap-16 py-16">

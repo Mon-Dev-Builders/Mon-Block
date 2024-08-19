@@ -43,7 +43,7 @@ const cardNews = [
 export const News = () => {
   return (
     <Container>
-      <div className="w-full h-fit flex flex-col items-center 2xl:gap-12 gap-8 py-32">
+      {/* <div className="w-full h-fit flex flex-col items-center 2xl:gap-12 gap-8 py-32">
         <h3 className="text-4xl 2xl:text-5xl font-medium text-[#000000] ">
           Мэдээ, мэдээлэл
         </h3>
@@ -59,7 +59,7 @@ export const News = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </Container>
   );
 };

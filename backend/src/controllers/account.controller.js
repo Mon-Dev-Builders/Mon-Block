@@ -3,13 +3,12 @@ const path = require("path");
 const { v4 } = require("uuid");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const { readJson } = require("../utils");
 require("dotenv").config();
 
 const getAllAccounts = async (req, res) => {
   try {
-    const filePath = path.join(__dirname, "..", "data", "accounts.json");
-    const rawData = fs.readFileSync(filePath);
-    const accounts = JSON.parse(rawData);
+    const accounts = readJson("accounts.json");
 
     res.json(accounts);
   } catch (error) {
@@ -19,9 +18,7 @@ const getAllAccounts = async (req, res) => {
 };
 const createAccount = async (req, res) => {
   try {
-    const filePath = path.join(__dirname, "..", "data", "accounts.json");
-    const rawData = fs.readFileSync(filePath);
-    const accounts = JSON.parse(rawData);
+    const accounts = readJson("accounts.json");
 
     const hashedPassword = await bcrypt.hash(req.body.password, 13);
 
@@ -58,9 +55,9 @@ const createAccount = async (req, res) => {
     res.json({
       message: "Success",
       account: {
+        id: newAccount.id,
         name: newAccount.name,
         email: newAccount.email,
-        id: newAccount.id,
         createdDate: newAccount.createdDate,
       },
     });
@@ -98,9 +95,9 @@ const checkAccount = async (req, res) => {
     res.json({
       message: "Success",
       user: {
+        id: findAccount.id,
         name: findAccount.name,
         email: findAccount.email,
-        id: findAccount.id,
         createdDate: findAccount.createdDate,
       },
     });

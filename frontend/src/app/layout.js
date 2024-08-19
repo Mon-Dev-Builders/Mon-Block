@@ -1,5 +1,7 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { Footer, Header, Video } from "@/components";
+import { DataProvider } from "@/components/utils/dataProvider";
 
 const montserrat = Montserrat({ weight: "400", subsets: ["latin"] });
 export const metadata = {
@@ -10,7 +12,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <DataProvider>
+          <div className="shadow-2xl w-fit m-auto">
+            <Header />
+            {children}
+            <Video />
+            <Footer />
+          </div>
+        </DataProvider>
+      </body>
     </html>
   );
 }
