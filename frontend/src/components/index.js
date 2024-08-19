@@ -9,3 +9,4 @@ export * from "./Products";
 export * from "./Video";
 export * from "./ProductsDetail";
 export * from "./Login";
+export * from "./GridNews";

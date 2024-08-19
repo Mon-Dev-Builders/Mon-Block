@@ -3,23 +3,23 @@
 import { useState } from "react";
 import { Container } from "./assets";
 
-const logos = [
-  { image: "Youtube.png" },
-  { image: "Facebook.png" },
-  { image: "Linkedin.png" },
-  { image: "Twitter.png" },
-  { image: "Youtube.png" },
-  { image: "Facebook.png" },
-  { image: "Linkedin.png" },
-  { image: "Twitter.png" },
-  { image: "Youtube.png" },
-  { image: "Facebook.png" },
-  { image: "Linkedin.png" },
-  { image: "Twitter.png" },
-  { image: "Youtube.png" },
-  { image: "Facebook.png" },
-  { image: "Linkedin.png" },
-  { image: "Twitter.png" },
+const imageSources = [
+  "./Youtube.png",
+  "./Facebook.png",
+  "./Linkedin.png",
+  "./Twitter.png",
+  "./Youtube.png",
+  "./Facebook.png",
+  "./Linkedin.png",
+  "./Twitter.png",
+  "./Youtube.png",
+  "./Facebook.png",
+  "./Linkedin.png",
+  "./Twitter.png",
+  "./Youtube.png",
+  "./Facebook.png",
+  "./Linkedin.png",
+  "./Twitter.png",
 ];
 
 export const Contacts = () => {
@@ -40,29 +40,33 @@ export const Contacts = () => {
           Харилцагчид
         </h3>
         <div
-          className="w-full h-24 overflow-hidden flex bg-white"
+          className={`slider ${isPaused ? "paused" : ""}`}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <div className={`slide-animation ${isPaused ? "paused" : ""}`}>
-            {logos.map((card, index) => (
-              <img
-                key={index}
-                src={`./${card.image}`}
-                className="h-24 mx-10 opacity-50 hover:opacity-100 transition-opacity duration-30"
-                alt="Logo"
-              />
+          <div className="slide-track">
+            {imageSources.map((src, index) => (
+              <div className="slide" key={index}>
+                <img
+                  src={src}
+                  height="100"
+                  width="250"
+                  alt={`Logo ${index + 1}`}
+                  className="mx-10 opacity-50 hover:opacity-100 transition-opacity duration-30"
+                />
+              </div>
             ))}
-          </div>
-          <div className={`slide-animation ${isPaused ? "paused" : ""}`}>
-            {logos.map((card, index) => (
-              <img
-                key={index + logos.length}
-                src={`./${card.image}`}
-                style={{ color: "red" }}
-                className="h-24 mx-10 opacity-50 hover:opacity-100 transition-opacity duration-30"
-                alt="Logo"
-              />
+            {/* Repeating logos for seamless scrolling */}
+            {imageSources.map((src, index) => (
+              <div className="slide" key={index + imageSources.length}>
+                <img
+                  src={src}
+                  height="100"
+                  width="250"
+                  alt={`Logo ${index + 1}`}
+                  className="mx-10 opacity-50 hover:opacity-100 transition-opacity duration-30"
+                />
+              </div>
             ))}
           </div>
         </div>
