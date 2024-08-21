@@ -4,6 +4,11 @@ import { FiPhone } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { TbMapSearch } from "react-icons/tb";
 
+import { TfiTwitterAlt } from "react-icons/tfi";
+import { FaFacebook } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
 export const Footer = () => {
   return (
     <Container>
@@ -25,17 +30,10 @@ export const Footer = () => {
               +976 9900 0000
             </h1>
             <div className="flex justify-start items-center gap-5">
-              {["Twitter", "Facebook", "Linkedin", "Youtube"].map(
-                (icon, index) => (
-                  <div
-                    key={index}
-                    className="w-8 h-8 md:w-9 md:h-9 2xl:w-10 2xl:h-10 relative cursor-pointer"
-                  >
-                    <img src={`./${icon}.png`} className="w-full h-full" />
-                    <div className="absolute left-0 top-0 w-full h-full bg-slate-600 opacity-0 hover:opacity-50 transition-opacity rounded-full"></div>
-                  </div>
-                )
-              )}
+              <TfiTwitterAlt className="w-8 h-8 md:w-9 md:h-9 2xl:w-10 cursor-pointer 2xl:h-10 transform transition-transform duration-300 hover:scale-110" />
+              <FaFacebook className="w-8 h-8 md:w-9 md:h-9 2xl:w-10 cursor-pointer 2xl:h-10 transform transition-transform duration-300 hover:scale-110" />
+              <FaLinkedin className="w-8 h-8 md:w-9 md:h-9 2xl:w-10 cursor-pointer 2xl:h-10 transform transition-transform duration-300 hover:scale-110" />
+              <FaYoutube className="w-8 h-8 md:w-9 md:h-9 2xl:w-10 cursor-pointer 2xl:h-10 transform transition-transform duration-300 hover:scale-110" />
             </div>
             <p className="text-sm md:text-lg text-[#FFFFFF] font-normal">
               ХХК-ийн Төв Оффис, Моннис цамхаг, Сүхбаатар дүүрэг, 1-р хороо,

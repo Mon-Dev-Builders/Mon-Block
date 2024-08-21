@@ -1,5 +1,3 @@
-
-import { Carousel, Contacts } from "@/components";
 import {
   Carousel,
   Contacts,
