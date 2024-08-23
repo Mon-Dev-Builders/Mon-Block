@@ -35,39 +35,37 @@ export const Contacts = () => {
 
   return (
     <Container>
-      <div className="w-full h-fit flex flex-col items-center 2xl:gap-12 gap-8 py-32">
+      <div className="w-full h-fit flex flex-col items-center 2xl:gap-12 gap-8 py-32 ">
         <h3 className="text-4xl 2xl:text-5xl font-medium text-[#000000]">
           Харилцагчид
         </h3>
         <div
-          className={`slider ${isPaused ? "paused" : ""}`}
+          className={`slider ${isPaused ? "paused" : ""} `}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
-          <div className="slide-track">
-            {imageSources.map((src, index) => (
-              <div className="slide" key={index}>
-                <img
-                  src={src}
-                  height="100"
-                  width="250"
-                  alt={`Logo ${index + 1}`}
-                  className="mx-10 opacity-50 hover:opacity-100 transition-opacity duration-30"
-                />
-              </div>
-            ))}
+          <div className="w-full h-full overflow-hidden">
+            <div className="flex w-[200%] slide-track">
+              {imageSources.map((src, index) => (
+                <div className="flex-1 h-10">
+                  <img
+                    src={src}
+                    alt={`Logo ${index + 1}`}
+                    className="opacity-50 hover:opacity-100 transition-opacity duration-30 w-full"
+                  />
+                </div>
+              ))}
 
-            {imageSources.map((src, index) => (
-              <div className="slide" key={index + imageSources.length}>
-                <img
-                  src={src}
-                  height="100"
-                  width="250"
-                  alt={`Logo ${index + 1}`}
-                  className="mx-10 opacity-50 hover:opacity-100 transition-opacity duration-30"
-                />
-              </div>
-            ))}
+              {imageSources.map((src, index) => (
+                <div className="flex-1 ">
+                  <img
+                    src={src}
+                    alt={`Logo ${index + 1}`}
+                    className="opacity-50 hover:opacity-100 transition-opacity duration-30 w-full"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
