@@ -35,8 +35,8 @@ export const Contacts = () => {
 
   return (
     <Container>
-      <div className="w-full h-fit flex flex-col items-center 2xl:gap-12 gap-8 py-32 ">
-        <h3 className="text-4xl 2xl:text-5xl font-medium text-[#000000]">
+      <div className="w-full h-fit flex flex-col items-center 2xl:gap-12 md:gap-8 md:py-32 py-12">
+        <h3 className="md:ext-4xl 2xl:text-5xl text-xs font-medium text-[#000000]">
           Харилцагчид
         </h3>
         <div
