@@ -14,15 +14,15 @@ export const Carousel = () => {
   });
   return (
     <Container>
-      <div className="h-[36rem] bg-black relative overflow-hidden">
+      <div className="h-96 xl:h-[36rem] mx-4 xl:mx-0 rounded-2xl xl:rounded-none bg-white relative overflow-hidden">
         <div
           className={`absolute z-20 bg-gradient-to-r ${
             percent === 0 || percent === 3 ? "from-[#DE2028]" : "from-[#002672]"
-          }  to-transparent top-0 left-0 text-white px-24 py-28 w-full h-full`}
+          }  to-transparent top-0 left-0 text-white px-12 xl:px-24 py-14 xl:py-28 w-full h-full`}
         >
-          <p className="text-7xl leading-snug">ИЛҮҮ ХЯМД</p>
-          <p className="text-7xl">ИЛҮҮ ЧАНАРТАЙГ</p>
-          <p className="text-3xl leading-tight">ТАНД ХҮРГЭНЭ</p>
+          <p className="text-3xl xl:text-7xl">ИЛҮҮ ХЯМД</p>
+          <p className="text-3xl xl:text-7xl xl:mt-2">ИЛҮҮ ЧАНАРТАЙГ</p>
+          <p className="text-xl xl:text-3xl ">ТАНД ХҮРГЭНЭ</p>
         </div>
         <div className="absolute bottom-0 mb-12 flex w-full gap-5 justify-center z-30">
           <div
