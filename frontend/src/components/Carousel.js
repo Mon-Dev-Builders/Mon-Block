@@ -26,17 +26,17 @@ export const Carousel = () => {
         </div>
         <div className="absolute bottom-0 mb-12 flex w-full gap-5 justify-center z-30">
           <div
-            className={`w-4 h-4 border-2 rounded-full ${
+            className={`2xl:w-5 w-4 h-4 2xl:h-5 border-2 rounded-full ${
               percent === 0 || percent === 3 ? "bg-white" : null
             }`}
           ></div>
           <div
-            className={`w-4 h-4 border-2 rounded-full ${
+            className={`2xl:w-5 w-4 h-4 2xl:h-5 border-2 rounded-full ${
               percent === 1 ? "bg-white" : null
             }`}
           ></div>
           <div
-            className={`w-4 h-4 border-2 rounded-full ${
+            className={`2xl:w-5 w-4 h-4 2xl:h-5 border-2 rounded-full ${
               percent === 2 ? "bg-white" : null
             }`}
           ></div>
