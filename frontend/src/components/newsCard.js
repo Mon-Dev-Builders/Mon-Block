@@ -17,7 +17,7 @@ export const NewsCard = ({ newsImage, newsDate, newsTitle }) => {
         <h6 className="md:text-xs md:visible text-[0px] text-font-thin text-[#000000] invisible ">
           {newsDate}
         </h6>
-        <h4 className="md:text-base text-[8px] font-bold text-[#000000]">
+        <h4 className="2xl:text-xl md:text-base text-[8px] font-bold text-[#000000]">
           {newsTitle}
         </h4>
       </div>

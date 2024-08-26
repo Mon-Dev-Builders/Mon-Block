@@ -49,6 +49,7 @@ export const Contacts = () => {
               {imageSources.map((src, index) => (
                 <div className="flex-1 h-10">
                   <img
+                    key={index}
                     src={src}
                     alt={`Logo ${index + 1}`}
                     className="opacity-50 hover:opacity-100 transition-opacity duration-30 w-full"
@@ -59,6 +60,7 @@ export const Contacts = () => {
               {imageSources.map((src, index) => (
                 <div className="flex-1 ">
                   <img
+                    key={`1000+${index}`}
                     src={src}
                     alt={`Logo ${index + 1}`}
                     className="opacity-50 hover:opacity-100 transition-opacity duration-30 w-full"
