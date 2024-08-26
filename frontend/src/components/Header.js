@@ -48,13 +48,7 @@ export const Header = () => {
           </div>
           <button
             onClick={() => router.push("/login")}
-            style={{
-              backgroundColor:
-                pathname === "/login" || pathname === "/register"
-                  ? "#C81127"
-                  : "#002672",
-            }}
-            className="py-1 px-10 text-base h-fit  text-white rounded-2xl"
+            className="2xl:py-2 py-1 px-10 2xl:text-xl text-base 2xl:px-12 h-fit bg-[#002672] text-white rounded-2xl"
           >
             Нэвтрэх
           </button>

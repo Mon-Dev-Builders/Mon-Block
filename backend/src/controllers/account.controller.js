@@ -3,12 +3,21 @@ const path = require("path");
 const { v4 } = require("uuid");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+<<<<<<< HEAD
 const { readJson } = require("../utils");
+=======
+>>>>>>> ben
 require("dotenv").config();
 
 const getAllAccounts = async (req, res) => {
   try {
+<<<<<<< HEAD
     const accounts = readJson("accounts.json");
+=======
+    const filePath = path.join(__dirname, "..", "data", "accounts.json");
+    const rawData = fs.readFileSync(filePath);
+    const accounts = JSON.parse(rawData);
+>>>>>>> ben
 
     res.json(accounts);
   } catch (error) {
@@ -18,7 +27,13 @@ const getAllAccounts = async (req, res) => {
 };
 const createAccount = async (req, res) => {
   try {
+<<<<<<< HEAD
     const accounts = readJson("accounts.json");
+=======
+    const filePath = path.join(__dirname, "..", "data", "accounts.json");
+    const rawData = fs.readFileSync(filePath);
+    const accounts = JSON.parse(rawData);
+>>>>>>> ben
 
     const hashedPassword = await bcrypt.hash(req.body.password, 13);
 
@@ -55,9 +70,15 @@ const createAccount = async (req, res) => {
     res.json({
       message: "Success",
       account: {
+<<<<<<< HEAD
         id: newAccount.id,
         name: newAccount.name,
         email: newAccount.email,
+=======
+        name: newAccount.name,
+        email: newAccount.email,
+        id: newAccount.id,
+>>>>>>> ben
         createdDate: newAccount.createdDate,
       },
     });
@@ -95,9 +116,15 @@ const checkAccount = async (req, res) => {
     res.json({
       message: "Success",
       user: {
+<<<<<<< HEAD
         id: findAccount.id,
         name: findAccount.name,
         email: findAccount.email,
+=======
+        name: findAccount.name,
+        email: findAccount.email,
+        id: findAccount.id,
+>>>>>>> ben
         createdDate: findAccount.createdDate,
       },
     });
