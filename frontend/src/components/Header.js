@@ -23,7 +23,7 @@ export const Header = () => {
   const router = useRouter();
   return (
     <Container>
-      <div className="xl:shadow-2xl w-full bg-white pb-8  pt-8 xl:pt-16  px-8 xl:px-24 relative z-50">
+      {/* <div className="xl:shadow-2xl w-full bg-white pb-8  pt-8 xl:pt-16  px-8 xl:px-24 relative z-50">
         <div className="max-w-[1631px] m-auto flex justify-between items-center text-2xl">
           <Link href="/">
             <div
@@ -65,7 +65,7 @@ export const Header = () => {
             <TbMenuDeep />
           </div>
         </div>
-      </div>
+      </div> */}
     </Container>
   );
 };
