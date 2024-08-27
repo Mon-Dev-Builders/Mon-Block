@@ -9,12 +9,28 @@ export const Video = () => {
     "https://res.cloudinary.com/your-cloud-name/raw/upload/v1234567890/captions.vtt"; // Replace with your Cloudinary captions URL
   return (
     <Container>
-      <div>Video</div>
-      {/* <CldVideoPlayer
+      <div className="w-full h-56 xl:h-[550px] overflow-hidden">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://www.youtube.com/embed/u0TVuChMEJw"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </Container>
+  );
+};
+{
+  /* <CldVideoPlayer
         style={{ width: "100%", height: "auto", maxWidth: "1920px" }}
         src="https://res.cloudinary.com/dqhguhv7o/video/upload/v1723171042/samples/sea-turtle.mp4"
-      /> */}
-      <div className="w-full h-[550px] overflow-hidden">
+      /> */
+}
+{
+  /* <div className="w-full h-[550px] overflow-hidden">
         <video width="100%" height="550" controls preload="none">
           <source src={cloudinaryVideoUrl} type="video/mp4" />
           <track
@@ -24,7 +40,5 @@ export const Video = () => {
             label="English"
           />
         </video>
-      </div>
-    </Container>
-  );
-};
+      </div> */
+}

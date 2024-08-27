@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
             <Header />
             {children}
             <Video />
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </DataProvider>
       </body>

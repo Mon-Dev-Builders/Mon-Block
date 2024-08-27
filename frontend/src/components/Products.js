@@ -6,23 +6,25 @@ export const Products = () => {
   const { products } = useData();
   return (
     <Container>
-      <div className="flex flex-col items-center gap-16 py-16">
-        <p className="text-4xl">БҮТЭЭГДЭХҮҮН</p>
-        <div className="flex gap-24">
+      <div className="flex flex-col items-center gap-4 xl:gap-16 py-12 px-4 xl:py-16">
+        <p className="text-lg xl:text-4xl">БҮТЭЭГДЭХҮҮН</p>
+        <div className="flex flex-col xl:flex-row gap-6 xl:gap-24 w-full">
           {products.map((product) => (
             <Link key={product.name} href={`/product#${product.name}`}>
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center w-full">
                 <div
-                  className="w-[532px] h-[532px] bg-cover bg-center rounded-xl"
+                  className="w-full h-44 xl:w-[532px] xl:h-[532px] bg-cover bg-center rounded-xl"
                   style={{ backgroundImage: `url(${product.image})` }}
                 ></div>
-                <p className="text-4xl mt-9">{product.title}</p>
+                <p className="text-base xl:text-4xl mt-4 xl:mt-9">
+                  {product.title}
+                </p>
               </div>
             </Link>
           ))}
         </div>
       </div>
-      <div className="h-[3px] my-20 bg-red-500 w-full"></div>
+      <div className="h-[3px] my-0 xl:my-20 bg-red-500 w-full"></div>
     </Container>
   );
 };

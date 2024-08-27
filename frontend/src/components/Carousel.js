@@ -18,26 +18,30 @@ export const Carousel = () => {
         <div
           className={`absolute z-20 bg-gradient-to-r ${
             percent === 0 || percent === 3 ? "from-[#DE2028]" : "from-[#002672]"
-          }  to-transparent top-0 left-0 text-white px-12 xl:px-24 py-14 xl:py-28 w-full h-full`}
+          }  to-transparent top-0 left-0 text-white px-6 sm:px-12 xl:px-24 pt-24 sm:py-14 xl:py-28 w-full h-full`}
         >
-          <p className="text-3xl xl:text-7xl">ИЛҮҮ ХЯМД</p>
-          <p className="text-3xl xl:text-7xl xl:mt-2">ИЛҮҮ ЧАНАРТАЙГ</p>
-          <p className="text-xl xl:text-3xl ">ТАНД ХҮРГЭНЭ</p>
+          <p className="text-3xl sm:text-5xl font-bold xl:text-7xl">
+            ИЛҮҮ ХЯМД
+          </p>
+          <p className="text-3xl sm:text-5xl font-bold xl:text-7xl sm:mt-1 xl:mt-2">
+            ИЛҮҮ ЧАНАРТАЙГ
+          </p>
+          <p className="text-xl sm:text-2xl  xl:text-3xl ">ТАНД ХҮРГЭНЭ</p>
         </div>
-        <div className="absolute bottom-0 mb-12 flex w-full gap-5 justify-center z-30">
+        <div className="absolute bottom-0 mb-4 sm:mb-12 flex w-full gap-3 sm:gap-5 justify-center z-30">
           <div
-            className={`2xl:w-5 w-4 h-4 2xl:h-5 border-2 rounded-full ${
-              percent === 0 || percent === 3 ? "bg-white" : null
+            className={`w-[10px] h-[10px] sm:w-4 sm:h-4 2xl:w-5 2xl:h-5 border-2 rounded-full ${
+              percent === 0 || percent === 3 ? "bg-[#FF0202]" : null
             }`}
           ></div>
           <div
-            className={`2xl:w-5 w-4 h-4 2xl:h-5 border-2 rounded-full ${
-              percent === 1 ? "bg-white" : null
+            className={`2xl:w-5 w-[10px] h-[10px] sm:w-4 sm:h-4 2xl:h-5 border-2 rounded-full ${
+              percent === 1 ? "bg-[#FF0202]" : null
             }`}
           ></div>
           <div
-            className={`2xl:w-5 w-4 h-4 2xl:h-5 border-2 rounded-full ${
-              percent === 2 ? "bg-white" : null
+            className={`2xl:w-5 w-[10px] h-[10px] sm:w-4 sm:h-4 2xl:h-5 border-2 rounded-full ${
+              percent === 2 ? "bg-[#FF0202]" : null
             }`}
           ></div>
         </div>

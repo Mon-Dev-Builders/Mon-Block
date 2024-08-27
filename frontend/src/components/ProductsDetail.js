@@ -5,9 +5,9 @@ export const ProductsDetail = () => {
   const { products } = useData();
   return (
     <Container>
-      <div className="flex flex-col items-center py-12">
-        <p className="text-4xl">БҮТЭЭГДЭХҮҮН</p>
-        <div className="flex flex-col w-full my-24 items-center">
+      <div className="flex flex-col items-center px-4 py-12">
+        <p className="text-lg xl:text-4xl">БҮТЭЭГДЭХҮҮН</p>
+        <div className="flex flex-col w-full my-6 xl:my-24 items-center gap-4">
           {products.map((product, index) => (
             <div
               key={product.name}
@@ -15,16 +15,20 @@ export const ProductsDetail = () => {
               className="w-full flex flex-col items-center"
             >
               {index !== 0 ? (
-                <div className="h-[3px] my-20 bg-red-500 w-full"></div>
+                <div className="hidden sm:flex h-[3px] my-20 bg-red-500 w-full"></div>
               ) : null}
-              <div className="flex gap-16">
+              <div className="flex flex-col sm:flex-row gap-4 xl:gap-16">
                 <div
-                  className="w-[532px] h-[532px] bg-cover bg-center rounded-xl"
+                  className="w-full h-44 xl:w-[532px] xl:h-[532px] bg-cover bg-center rounded-xl"
                   style={{ backgroundImage: `url(${product.image})` }}
                 ></div>
-                <div className="flex flex-col max-w-[684px] h-[532px] text-[30px] font-medium gap-10 ">
-                  <p className="text-4xl">{product.title}</p>
-                  <p className="text-xl text-justify">{product.description}</p>
+                <div className="flex flex-col max-w-[684px] max-h-[532px] text-[30px] font-medium gap-4 xl:gap-10 ">
+                  <p className="text-base font-bold xl:text-4xl text-center">
+                    {product.title}
+                  </p>
+                  <p className="text-sm xl:text-xl text-justify px-2">
+                    {product.description}
+                  </p>
                 </div>
               </div>
             </div>

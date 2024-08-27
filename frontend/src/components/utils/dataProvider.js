@@ -35,9 +35,26 @@ const productsData = [
       "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
   },
 ];
+const featureData = [
+  {
+    title: "ДАВУУ ТАЛ",
+    description:
+      "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
+    image:
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
+  },
+  {
+    title: "ДАВУУ ТАЛ",
+    description:
+      "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
+    image:
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
+  },
+];
 const newsData = [];
 export const DataProvider = ({ children }) => {
   const [products, setProducts] = useState(productsData);
+  const [features, setFeatures] = useState(featureData);
   const [news, setNews] = useState(newsData);
   // useEffect(() => {
   //   const getProduct = async () => {
@@ -51,7 +68,7 @@ export const DataProvider = ({ children }) => {
   //   getProduct();
   // }, []);
   return (
-    <DataContext.Provider value={{ products, news }}>
+    <DataContext.Provider value={{ products, news, features }}>
       {children}
     </DataContext.Provider>
   );
