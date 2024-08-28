@@ -1,9 +1,8 @@
 "use client";
 import Link from "next/link";
-import { Container } from "./assets";
+import { Container, Menu, MenuIcon, ProfileIcon } from "./assets";
 import { usePathname, useRouter } from "next/navigation";
-import { TbMenuDeep } from "react-icons/tb";
-import { BiUser } from "react-icons/bi";
+import { useState } from "react";
 const paths = [
   {
     name: "Бидний тухай",
@@ -19,6 +18,7 @@ const paths = [
   },
 ];
 export const Header = () => {
+  const [side, setSide] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
   return (
@@ -27,7 +27,7 @@ export const Header = () => {
         <div className="max-w-[1631px] m-auto flex justify-between items-center text-2xl">
           <Link href="/">
             <div
-              className="w-44 xl:w-72  h-9 xl:h-14"
+              className="w-44 sm:w-60 xl:w-72  h-9 sm:h-12 xl:h-14"
               style={{
                 backgroundImage: `url("https://res.cloudinary.com/dzm85pldh/image/upload/v1723290540/Logo_iueel9.png")`,
                 backgroundSize: "cover",
@@ -35,7 +35,7 @@ export const Header = () => {
               }}
             ></div>
           </Link>
-          <div className="xl:flex w-[38rem] justify-between items-center text-xl hidden ">
+          <div className="sm:flex w-[28rem] xl:w-[38rem] justify-between items-center text-base xl:text-xl hidden ">
             {paths.map((item, index) => (
               <Link href={item.path} key={index}>
                 <div
@@ -56,14 +56,21 @@ export const Header = () => {
                   ? "#C81127"
                   : "#002672",
             }}
-            className="py-1 px-10 text-base h-fit hidden xl:flex  text-white rounded-2xl"
+            className="py-1 px-8 xl:px-10 text-sm xl:text-base h-fit hidden sm:flex  text-white rounded-2xl"
           >
             Нэвтрэх
           </button>
-          <div className="flex gap-2 xl:hidden">
-            <BiUser />
-            <TbMenuDeep />
+          <div className="flex gap-2 sm:hidden">
+            <ProfileIcon pathname={pathname} router={router} />
+            <MenuIcon setSide={setSide} />
           </div>
+          <Menu
+            side={side}
+            setSide={setSide}
+            paths={paths}
+            pathname={pathname}
+            router={router}
+          />
         </div>
       </div>
     </Container>

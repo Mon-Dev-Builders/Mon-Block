@@ -47,7 +47,7 @@ export const Contacts = () => {
           <div className="w-full h-full overflow-hidden">
             <div className="flex w-[200%] slide-track">
               {imageSources.map((src, index) => (
-                <div className="flex-1 h-10">
+                <div key={index} className="flex-1 h-10">
                   <img
                     key={index}
                     src={src}
@@ -58,7 +58,7 @@ export const Contacts = () => {
               ))}
 
               {imageSources.map((src, index) => (
-                <div className="flex-1 ">
+                <div key={index} className="flex-1 ">
                   <img
                     key={`1000+${index}`}
                     src={src}

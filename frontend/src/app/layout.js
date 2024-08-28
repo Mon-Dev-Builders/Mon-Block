@@ -14,11 +14,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={montserrat.className}>
         <DataProvider>
-          <div className="shadow-2xl w-full m-auto">
+          <div className="shadow-2xl w-fit m-auto">
             <Header />
             {children}
             <Video />
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </DataProvider>
       </body>
