@@ -6,7 +6,7 @@ export default function Home() {
       <Carousel />
       <Products />
       <Contacts />
-      <News />
+      {/* <News /> */}
     </>
   );
 }

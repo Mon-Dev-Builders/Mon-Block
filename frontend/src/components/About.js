@@ -3,15 +3,15 @@ import { Container } from "./assets";
 export const About = () => {
   return (
     <Container>
-      <div className="flex flex-col items-center py-16">
-        <p className="text-4xl">ТОВЧ ТАНИЛЦУУЛГА</p>
-        <div className="flex text-xl px-36 flex-col w-full my-24 items-center text-justify">
+      <div className="flex flex-col items-center pt-12 sm:py-14 xl:py-16">
+        <p className="text-lg sm:text-xl xl:text-4xl">ТОВЧ ТАНИЛЦУУЛГА</p>
+        <div className="flex text-sm sm:text-base xl:text-xl px-12 sm:px-24 xl:px-36 flex-col w-full my-12 sm:my-16 xl:my-24 items-center text-justify">
           <p>
             “Айвуун Аргалант” ХХК нь гадаад худалдаа, барилгын материалын
             худалдаа болон барилгын бүх төрлийн үйлчилгээ эрхлэх зорилгоор 2013
             онд байгуулагдсан 100% дотоодын хөрөнгө оруулалттай компани юм.
           </p>
-          <ul className="list-disc px-24 py-12">
+          <ul className="list-disc ml-4 px-6 sm:px-12 xl:px-24 py-8 sm:py-10 xl:py-12">
             <li>
               2016 он: Барилгын хуурай хольц буюу дотор болон гадна фасадны
               өнгөлгөө болон бүх төрлийн цавууг дотооддоо үйлдвэрлэх судалгаа,
@@ -79,6 +79,7 @@ export const About = () => {
             </p>
           </div>
         </div>
+        <div className="h-[3px] my-0 xl:my-20 bg-red-500 w-full"></div>
       </div>
     </Container>
   );
