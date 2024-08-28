@@ -14,13 +14,13 @@ export const Footer = () => {
     <Container>
       <div className="w-full h-[600px] flex flex-col-reverse sm:h-[552px] sm:w-full  sm:flex sm:flex-row  ">
         {/* Left Section */}
-        <div className="w-full h-[174px]  pt-10 px-14 pb-4    sm:w-1/3 sm:h-full  sm:px-6 sm:py-24  bg-[#C81127]">
+        <div className="w-full h-[174px]  pt-10 px-14 pb-4    sm:w-1/3 sm:h-full  sm:px-6 sm:py-20 xl:py-24 xl:pl-40  bg-[#C81127] lg:pb-32 ">
           <div className="h-full w-full flex flex-col items-center  gap-10 text-white  sm:flex sm:flex-col  sm:justify-between ">
-            <div className="flex  justify-center items-center sm:items-center sm:justify-center sm:h-fit ">
+            <div className="flex  justify-center items-center sm:items-center sm:justify-center sm:h-fit  xl:justify-start xl:w-full">
               {" "}
               <Link href="/">
                 <div
-                  className="w-64 h-14  2xl:w-[23rem] sm:w-50 2xl:h-full  sm:h-14 "
+                  className="w-64 h-14  2xl:w-80 2xl:h-[70px] sm:w-50   sm:h-14 "
                   style={{
                     backgroundImage: `url("https://res.cloudinary.com/dzm85pldh/image/upload/v1723290770/tsagaanLogo_ffhbhi.png")`,
                     backgroundSize: "cover",
@@ -29,17 +29,17 @@ export const Footer = () => {
                 ></div>
               </Link>
             </div>
-            <div className="w-full h-full flex justify-center  items-center sm:gap-5 sm:flex sm:flex-col sm:justify-between sm:items-start">
-              <h1 className="invisible text-xs md:text-3xl 2xl:text-4xl sm:visible font-bold text-[#FFFFFF] ">
+            <div className="w-full h-full flex justify-center  items-center sm:gap-5 sm:flex sm:flex-col sm:justify-between sm:items-start ">
+              <h1 className="invisible text-[0px] sm:text-3xl 2xl:text-4xl sm:visible font-bold text-[#FFFFFF] ">
                 +976 9900 0000
               </h1>
-              <div className="flex justify-center items-center gap-5">
+              <div className="w-full flex justify-center items-center gap-5  sm:justify-start">
                 <TfiTwitterAlt className="w-4 h-4 sm:w-6 sm:h-6 2xl:w-10 cursor-pointer 2xl:h-10 transform transition-transform duration-300 hover:scale-110" />
                 <FaFacebook className="w-4 h-4 sm:w-6 sm:h-6 2xl:w-10 cursor-pointer 2xl:h-10 transform transition-transform duration-300 hover:scale-110" />
                 <FaLinkedin className="w-4 h-4 sm:w-6 sm:h-6 2xl:w-10 cursor-pointer 2xl:h-10 transform transition-transform duration-300 hover:scale-110" />
                 <FaYoutube className="w-4 h-4 sm:w-6 sm:h-6 2xl:w-10 cursor-pointer 2xl:h-10 transform transition-transform duration-300 hover:scale-110" />
               </div>
-              <p className="invisible text-[8px] md:text-xl 2xl:text-2xl sm:visible  text-[#FFFFFF] font-normal">
+              <p className="invisible text-[0px] sm:text-xl 2xl:text-2xl sm:visible  text-[#FFFFFF] font-normal">
                 ХХК-ийн Төв Оффис, Моннис цамхаг, Сүхбаатар дүүрэг, 1-р хороо,
                 Чингисийн өргөн чөлөө
               </p>
@@ -47,47 +47,58 @@ export const Footer = () => {
           </div>
         </div>
         {/* Right Section */}
-        <div className="w-full  h-[426px]   py-4 px-14 md:w-2/3  bg-[#002672] md:h-full  md:px-[150px] md:pt-[92px] md:pb-40">
-          <div className="w-full h-full flex  flex-col  justify-between  text-white">
-            <div className="w-full   flex flex-col items-start gap-4 md:gap-20 md:items-start">
-              <h3 className="text-lg  md:text-3xl 2xl:text-4xl font-medium text-[#FFFFFF]">
+        <div className="w-full  h-[426px]   py-4 px-14 sm:w-2/3  bg-[#002672] sm:h-full sm:py-20   xl:px-[100px] xl:py-24">
+          <div className="w-full h-full flex  flex-col  justify-between  text-white sm:flex-row sm:gap-8">
+            <div className="w-full   flex flex-col items-start gap-4 sm:gap-10 sm:items-start xl:gap-12 sm:w-1/2">
+              <h3 className="text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl font-medium text-[#FFFFFF] ">
                 Борлуулалтын төв
               </h3>
-              <div className="w-full h-full gap-3 flex flex-col  items-start pl-6 md:gap-10 md:pl-0">
-                <div className="flex items-center gap-2 md:gap-3">
-                  <FiPhone className="w-4 h-4 md:w-6 md:h-6 2xl:w-8 2xl:h-8" />
-                  <h3 className="text-base md:text-xl 2xl:text-2xl text-[#FFFFFF] font-light">
+              <div className="w-full h-full gap-3 flex flex-col  items-start pl-6 sm:gap-4 sm:pl-0 xl:justify-between">
+                <div className="flex items-center gap-2 sm:gap-3">
+                  <FiPhone className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6 2xl:w-8 2xl:h-8" />
+                  <h3 className="text-base sm:text-lg xl:text-xl 2xl:text-2xl text-[#FFFFFF] font-light">
                     7000-7000; 9901-0000
                   </h3>
                 </div>
-                <div className="flex items-center gap-2 md:gap-3">
-                  <MdOutlineEmail className="w-4 h-4 md:w-6 md:h-6 2xl:w-8 2xl:h-8" />
-                  <h3 className="text-base md:text-xl 2xl:text-2xl text-[#FFFFFF] font-light">
+                <div className="flex items-center gap-2 xl:gap-3">
+                  <MdOutlineEmail className="w-4 h-4 sm:w-5 sm:h-5 xl:w-6 xl:h-6 2xl:w-8 2xl:h-8" />
+                  <h3 className="text-base sm:text-lg xl:text-xl 2xl:text-2xl text-[#FFFFFF] font-light">
                     aivuun@monblock.mn
                   </h3>
                 </div>
-                <div className="flex items-start gap-2 md:gap-3">
-                  <TbMapSearch className="w-4 h-4 flex-shrink-0 md:w-6 md:h-6 2xl:w-8 2xl:h-8" />
-                  <h3 className="text-base md:text-xl 2xl:text-2xl text-[#FFFFFF] font-light max-w-full">
+                <div className="flex items-start gap-2 xl:gap-3">
+                  <TbMapSearch className="w-4 h-4 flex-shrink-0 sm:w-5 sm:h-5 xl:w-6 xl:h-6 2xl:w-8 2xl:h-8" />
+                  <h3 className="text-base sm:text-lg xl:text-xl 2xl:text-2xl text-[#FFFFFF] font-light max-w-full">
                     ХХК-ийн Төв Оффис, Моннис цамхаг, Сүхбаатар дүүрэг, 1-р
                     хороо, Чингисийн өргөн чөлөө
                   </h3>
                 </div>
               </div>
             </div>
-            <div className="w-full flex flex-col justify-center items-start gap-4 md:w-1/2  md:gap-20  md:mt-0 md:items-start">
-              <h3 className="text-lg md:text-3xl 2xl:text-4xl font-medium text-[#FFFFFF]">
+            <div className="w-full flex flex-col justify-center items-start gap-4 sm:gap-10 sm:items-start sm:justify-start xl:gap-12 sm:w-1/2    md:mt-0 md:items-start xl:pl-10 xl:w-1/2">
+              <h3 className="text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl font-medium text-[#FFFFFF]">
                 Тусламж
               </h3>
-              <div className="w-full h-full flex flex-col gap-3 pl-6 items-start  md:pl-0">
-                <h3 className="text-base md:text-xl 2xl:text-2xl text-[#FFFFFF] font-light">
+              <div className="w-full h-full gap-3 sm:flex sm:flex-col hidden  items-start pl-6 sm:gap-10 sm:pl-0 xl:justify-between ">
+                <h3 className="text-base sm:text-lg xl:text-xl 2xl:text-2xl text-[#FFFFFF] font-light">
                   Нээлттэй ажлын байр
                 </h3>
-                <h3 className="text-base md:text-xl 2xl:text-2xl text-[#FFFFFF] font-light">
+                <h3 className="text-base sm:text-lg xl:text-xl 2xl:text-2xl text-[#FFFFFF] font-light">
+                  Мэдээ, мэдээлэл
+                </h3>
+                <h3 className="text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#FFFFFF] font-medium ">
+                  Хамтран ажиллах хүсэлт
+                </h3>
+              </div>
+              <div className="w-full  flex flex-col gap-3 pl-6 items-start  xl:pl-0 sm:hidden">
+                <h3 className="text-base sm:text-lg xl:text-xl 2xl:text-2xl text-[#FFFFFF] font-light">
+                  Нээлттэй ажлын байр
+                </h3>
+                <h3 className="text-base sm:text-lg xl:text-xl 2xl:text-2xl text-[#FFFFFF] font-light">
                   Мэдээ, мэдээлэл
                 </h3>
               </div>
-              <h3 className="text-lg md:text-xl 2xl:text-2xl text-[#FFFFFF] font-medium">
+              <h3 className="text-lg sm:text-2xl xl:text-3xl 2xl:text-4xl text-[#FFFFFF] font-medium sm:hidden">
                 Хамтран ажиллах хүсэлт
               </h3>
             </div>

@@ -2,27 +2,10 @@
 
 import { useState } from "react";
 import { Container } from "./assets";
-
-const imageSources = [
-  "./Youtube.png",
-  "./Facebook.png",
-  "./Linkedin.png",
-  "./Twitter.png",
-  "./Youtube.png",
-  "./Facebook.png",
-  "./Linkedin.png",
-  "./Twitter.png",
-  "./Youtube.png",
-  "./Facebook.png",
-  "./Linkedin.png",
-  "./Twitter.png",
-  "./Youtube.png",
-  "./Facebook.png",
-  "./Linkedin.png",
-  "./Twitter.png",
-];
+import { useData } from "./utils/dataProvider";
 
 export const Contacts = () => {
+  const { logosUrl } = useData();
   const [isPaused, setIsPaused] = useState(false);
 
   const handleMouseEnter = () => {
@@ -35,8 +18,8 @@ export const Contacts = () => {
 
   return (
     <Container>
-      <div className="w-full h-fit flex flex-col items-center 2xl:gap-12 md:gap-8 md:py-32 py-12">
-        <h3 className="md:ext-4xl 2xl:text-5xl text-xs font-medium text-[#000000]">
+      <div className="w-full h-fit flex flex-col items-center gap-6 2xl:gap-12 md:gap-8 md:py-32 py-12">
+        <h3 className="xl:text-4xl 2xl:text-5xl lg:text-3xl sm:text-2xl text-xs font-medium text-[#000000]">
           Харилцагчид
         </h3>
         <div
@@ -46,25 +29,39 @@ export const Contacts = () => {
         >
           <div className="w-full h-full overflow-hidden">
             <div className="flex w-[200%] slide-track">
-              {imageSources.map((src, index) => (
-                <div className="flex-1 h-10">
-                  <img
-                    key={index}
-                    src={src}
-                    alt={`Logo ${index + 1}`}
-                    className="opacity-50 hover:opacity-100 transition-opacity duration-30 w-full"
-                  />
+              {logosUrl.map((src, index) => (
+                <div key={index} className="flex-1 p-2 md:p-4">
+                  <div
+                    className="w-24 h-24 bg-contain bg-center opacity-40 hover:opacity-100 transition-opacity duration-300"
+                    style={{
+                      backgroundImage: `url(${src})`,
+                      backgroundSize: "contain", // Ensures the logo fits within the container
+                      backgroundRepeat: "no-repeat", // Prevents tiling
+                      backgroundPosition: "center", // Centers the logo within the container
+                      minWidth: "100px", // Ensures the container is not too small
+                      minHeight: "100px", // Ensures the container is not too small
+                      maxWidth: "150px", // Limits the maximum width for larger logos
+                      maxHeight: "150px", // Limits the maximum height for larger logos
+                    }}
+                  ></div>
                 </div>
               ))}
 
-              {imageSources.map((src, index) => (
-                <div className="flex-1 ">
-                  <img
-                    key={`1000+${index}`}
-                    src={src}
-                    alt={`Logo ${index + 1}`}
-                    className="opacity-50 hover:opacity-100 transition-opacity duration-30 w-full"
-                  />
+              {logosUrl.map((src, index) => (
+                <div key={index} className="flex-1 p-2 md:p-4">
+                  <div
+                    className="w-24 h-24 bg-contain bg-center opacity-40 hover:opacity-100 transition-opacity duration-300"
+                    style={{
+                      backgroundImage: `url(${src})`,
+                      backgroundSize: "contain", // Ensures the logo fits within the container
+                      backgroundRepeat: "no-repeat", // Prevents tiling
+                      backgroundPosition: "center", // Centers the logo within the container
+                      minWidth: "100px", // Ensures the container is not too small
+                      minHeight: "100px", // Ensures the container is not too small
+                      maxWidth: "150px", // Limits the maximum width for larger logos
+                      maxHeight: "150px", // Limits the maximum height for larger logos
+                    }}
+                  ></div>
                 </div>
               ))}
             </div>

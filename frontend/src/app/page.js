@@ -3,10 +3,10 @@ import { Carousel, Contacts, News, Products } from "@/components";
 export default function Home() {
   return (
     <>
-      {/* <Carousel />
+      <Carousel />
       <Products />
       <Contacts />
-      <News /> */}
+      <News />
     </>
   );
 }
