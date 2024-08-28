@@ -23,6 +23,7 @@ export const Features = () => {
           ))}
         </div>
       </div>
+      <div className="h-[3px] my-0 xl:my-20 bg-red-500 w-full"></div>
     </Container>
   );
 };
