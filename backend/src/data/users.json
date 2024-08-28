@@ -1,1 +1,16 @@
-[{"name":"Ben","email":"baynaabj74@gmail.com","password":"$2b$10$CGXsfBeXl.uoSL.UBPLafewSOvztlEiOsa.6XzijhMNosVSC5xq/a","id":"53e3ef5f-61e0-421e-8b69-f2f182ea6d1f","createdAt":"2024-08-19T09:19:53.240Z"},{"name":"monDev","email":"mon@gmail.com","password":"$2b$10$pWYCHEHeTk6HLjITgTEz3uN1cICU93FYef5P7AiTWceA7MWvEoYGu","id":"9573f75f-3632-430d-a100-a17a97849f82","createdAt":"2024-08-19T09:20:03.726Z"}]
+[
+  {
+    "name": "Ben",
+    "email": "baynaabj74@gmail.com",
+    "password": "$2b$10$CGXsfBeXl.uoSL.UBPLafewSOvztlEiOsa.6XzijhMNosVSC5xq/a",
+    "id": "53e3ef5f-61e0-421e-8b69-f2f182ea6d1f",
+    "createdAt": "2024-08-19T09:19:53.240Z"
+  },
+  {
+    "name": "monDev",
+    "email": "mon@gmail.com",
+    "password": "$2b$10$pWYCHEHeTk6HLjITgTEz3uN1cICU93FYef5P7AiTWceA7MWvEoYGu",
+    "id": "9573f75f-3632-430d-a100-a17a97849f82",
+    "createdAt": "2024-08-19T09:20:03.726Z"
+  }
+]
