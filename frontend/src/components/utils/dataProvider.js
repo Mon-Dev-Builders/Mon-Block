@@ -3,7 +3,6 @@
 import { api } from "@/lib/axios";
 import { createContext, useContext, useState } from "react";
 
-
 const DataContext = createContext();
 const productsData = [
   {
@@ -35,7 +34,6 @@ const productsData = [
       "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
   },
 ];
-<<<<<<< HEAD
 
 const logos = [
   "https://tavanbogd.com/_next/image?url=https%3A%2F%2Fadmin-mn.tavanbogd.com%2Fuploads%2FUntitled_design_3_5849002744.png&w=3840&q=75",
@@ -93,12 +91,6 @@ const cardNews = [
     image: "newsImage-3.png",
   },
 ];
-
-export const DataProvider = ({ children }) => {
-  const [products, setProducts] = useState(productsData);
-  const [news, setNews] = useState(cardNews);
-  const [logosUrl, setLogosUrl] = useState(logos);
-=======
 const featureData = [
   {
     title: "ДАВУУ ТАЛ",
@@ -150,15 +142,15 @@ const carouselData = {
     "https://res.cloudinary.com/dzm85pldh/image/upload/v1724812125/carousel3_soiorf.png",
     "https://res.cloudinary.com/dzm85pldh/image/upload/v1724812144/carousel2_wprz02.png",
     "https://res.cloudinary.com/dzm85pldh/image/upload/v1724812150/carousel1_k6q85b.png",
-  ]
-}
+  ],
+};
 const newsData = [];
 export const DataProvider = ({ children }) => {
   const [products, setProducts] = useState(productsData);
   const [features, setFeatures] = useState(featureData);
-  const [carousel, setCarousel] = useState(carouselData)
+  const [carousel, setCarousel] = useState(carouselData);
+  const [logosUrl, setLogosUrl] = useState(logos);
   const [news, setNews] = useState(newsData);
->>>>>>> main
   // useEffect(() => {
   //   const getProduct = async () => {
   //     try {
@@ -171,11 +163,9 @@ export const DataProvider = ({ children }) => {
   //   getProduct();
   // }, []);
   return (
-<<<<<<< HEAD
-    <DataContext.Provider value={{ products, news, logosUrl }}>
-=======
-    <DataContext.Provider value={{ products, news, features, carousel }}>
->>>>>>> main
+    <DataContext.Provider
+      value={{ products, news, features, carousel, logosUrl }}
+    >
       {children}
     </DataContext.Provider>
   );
