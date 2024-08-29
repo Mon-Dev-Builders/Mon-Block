@@ -18,7 +18,7 @@ export const Contacts = () => {
 
   return (
     <Container>
-      <div className="w-full h-fit flex flex-col items-center gap-6 2xl:gap-12 md:gap-8 md:py-32 py-12">
+      {/* <div className="w-full h-fit flex flex-col items-center gap-6 2xl:gap-12 md:gap-8 md:py-32 py-12">
         <h3 className="xl:text-4xl 2xl:text-5xl lg:text-3xl sm:text-2xl text-xs font-medium text-[#000000]">
           Харилцагчид
         </h3>
@@ -67,7 +67,7 @@ export const Contacts = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Container>
   );
 };
