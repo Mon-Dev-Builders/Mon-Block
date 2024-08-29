@@ -7,11 +7,11 @@ export const News = () => {
   const { news } = useData();
   return (
     <Container>
-      {/* <div className="w-full h-[250px]  2xl:h-[810px]  lg:h-[620px] sm:h-[390px] flex flex-col items-center justify-between ">
+      <div className="w-full h-[250px]  2xl:h-[810px]  lg:h-[620px] sm:h-[390px] flex flex-col items-center justify-between my-10">
         <h3 className="md:text-2xl sm:text-xl xl:text-4xl 2xl:text-5xl text-xs font-medium text-[#000000] ">
           Мэдээ, мэдээлэл
         </h3>
-        <div className="w-full h-full overflow-x-scroll">
+        <div className="w-screen xl:w-full h-full overflow-x-auto">
           <div className="w-full h-full flex items-center 2xl:gap-12 gap-4 px-5">
             {news.map((card) => (
               <NewsCard
@@ -23,7 +23,7 @@ export const News = () => {
             ))}
           </div>
         </div>
-      </div> */}
+      </div>
     </Container>
   );
 };

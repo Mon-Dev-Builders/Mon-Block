@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export const NewsCard = ({ newsImage, newsDate, newsTitle }) => {
   return (
-    <div className="2xl:w-[589px] 2xl:h-[700px] lg:w-[440px] lg:h-[540px] sm:h-[320px] sm:w-[240px]  h-[200px] w-[156px] flex flex-col items-center justify-between cursor-pointer">
+    <div className=" 2xl:w-[589px] 2xl:h-[700px] lg:w-[440px] lg:h-[540px] sm:h-[320px] sm:w-[240px]  h-[200px] w-[156px] flex flex-col items-center justify-between cursor-pointer">
       <div className="2xl:w-[589px] 2xl:h-[589px] lg:w-[440px] lg:h-[440px] sm:h-[240px] sm:w-[240px] h-[156px] w-[156px] rounded-xl cursor-pointer overflow-hidden">
         <div className="w-full h-full relative transform transition-transform duration-300 hover:scale-110">
           <img src={`./${newsImage}`} className="w-full h-full  rounded-xl " />
