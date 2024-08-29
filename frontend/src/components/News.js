@@ -1,14 +1,13 @@
 "use client";
 
-import { Container } from "./assets";
-import { NewsCard } from "./newsCard";
+import { Container, NewsCard } from "./assets";
 import { useData } from "./utils/dataProvider";
 
 export const News = () => {
   const { news } = useData();
   return (
     <Container>
-      <div className="w-full h-[250px]  2xl:h-[810px]  lg:h-[620px] sm:h-[390px] flex flex-col items-center justify-between ">
+      {/* <div className="w-full h-[250px]  2xl:h-[810px]  lg:h-[620px] sm:h-[390px] flex flex-col items-center justify-between ">
         <h3 className="md:text-2xl sm:text-xl xl:text-4xl 2xl:text-5xl text-xs font-medium text-[#000000] ">
           Мэдээ, мэдээлэл
         </h3>
@@ -24,7 +23,7 @@ export const News = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </Container>
   );
 };

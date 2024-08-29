@@ -1,7 +1,6 @@
 "use client";
 
-import { Container } from "./assets";
-import { NewsCard } from "./newsCard";
+import { Container, NewsCard } from "./assets";
 import { useData } from "./utils/dataProvider";
 
 export const GridNews = () => {
