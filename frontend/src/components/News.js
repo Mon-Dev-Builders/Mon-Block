@@ -11,7 +11,7 @@ export const News = () => {
         <h3 className="md:text-2xl sm:text-xl xl:text-4xl 2xl:text-5xl text-xs font-medium text-[#000000] ">
           Мэдээ, мэдээлэл
         </h3>
-        <div className="w-screen lg:w-full h-full overflow-x-auto">
+        <div className="w-screen h-full overflow-x-auto">
           <div className="w-fit h-full flex items-center 2xl:gap-12 gap-4 px-5">
             {news.map((card) => (
               <NewsCard
