@@ -17,7 +17,6 @@ export const Footer = () => {
         <div className="w-full h-[174px]  pt-10 px-14 pb-4    sm:w-1/3 sm:h-full  sm:px-6 sm:py-20 xl:py-24 xl:pl-40  bg-[#C81127] lg:pb-32 ">
           <div className="flex flex-col items-center w-full h-full gap-10 text-white sm:flex sm:flex-col sm:justify-between ">
             <div className="flex items-center justify-center sm:items-center sm:justify-center sm:h-fit xl:justify-start xl:w-full">
-              {" "}
               <Link href="/">
                 <div
                   className="w-40 h-28  2xl:w-80 2xl:h-[70px] sm:w-48   sm:h-[140px] "
