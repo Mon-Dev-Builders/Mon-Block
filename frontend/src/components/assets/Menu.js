@@ -13,7 +13,7 @@ export const Menu = ({ side, setSide, paths, pathname }) => {
           <div
             className="w-44 h-9 "
             style={{
-              backgroundImage: `url("https://res.cloudinary.com/dzm85pldh/image/upload/v1723290540/Logo_iueel9.png")`,
+              backgroundImage: `url("headLogo.png")`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
