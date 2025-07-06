@@ -1,3 +1,3 @@
 export const Container = ({ children }) => {
-  return <div className="max-w-[1920px] m-auto">{children}</div>;
+  return <div className="max-w-[1920px] m-auto overflow-hidden">{children}</div>;
 };
