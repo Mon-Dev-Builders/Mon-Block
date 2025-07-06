@@ -19,7 +19,7 @@ export const Footer = () => {
             <div className="flex items-center justify-center sm:items-center sm:justify-center sm:h-fit xl:justify-start xl:w-full">
               <Link href="/">
                 <div
-                  className="w-40 h-28  2xl:w-80 2xl:h-[70px] sm:w-48   sm:h-[140px] "
+                  className="w-40 h-28  2xl:w-64 2xl:h-[188px] sm:w-48   sm:h-[140px] "
                   style={{
                     backgroundImage: `url("whiteLogo.png")`,
                     backgroundSize: "cover",
