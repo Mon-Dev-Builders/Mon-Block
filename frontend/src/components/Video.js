@@ -13,10 +13,11 @@ export const Video = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/u0TVuChMEJw"
+          src="https://www.youtube.com/embed/s-ixtGqmHgo?si=BgFaqCeTvu1-k8Jo"
           title="YouTube video player"
           frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
           allowFullScreen
         ></iframe>
       </div>
