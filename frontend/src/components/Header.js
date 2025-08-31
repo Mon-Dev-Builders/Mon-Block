@@ -26,6 +26,7 @@ const paths = [
     path: "/news",
   },
 ];
+
 export const Header = () => {
   const [side, setSide] = useState(false);
   const pathname = usePathname();
