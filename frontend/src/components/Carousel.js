@@ -17,7 +17,7 @@ export const Carousel = () => {
   const images = carousel.images
   return (
     <Container>
-      <div className="h-96 xl:h-[36rem] mx-4 xl:mx-0 rounded-2xl xl:rounded-none bg-white relative overflow-hidden">
+      <div className="h-96 xl:h-[447px] mx-4 xl:mx-0 rounded-2xl xl:rounded-none bg-white relative overflow-hidden">
         <div
           className={`absolute z-20 bg-gradient-to-r ${percent === 0 || percent === 3 ? "from-[#DE2028]" : "from-[#002672]"
             }  to-transparent top-0 left-0 text-white px-6 sm:px-12 xl:px-24 pt-24 sm:py-14 xl:py-28 w-full h-full`}
