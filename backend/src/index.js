@@ -17,7 +17,7 @@ app.use(express.json());
 app.use("/user", userRouter);
 app.use("/auth", authRouter);
 app.use("/product", productRouter);
-=======
+
 
 
 const { authRouter } = require("./routes/auth.route");
@@ -29,7 +29,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/auth", authRouter);
->>>>>>> ben
+
 
 app.listen(3030, () => {
   console.log(`Server is running on port ${PORT}`);
