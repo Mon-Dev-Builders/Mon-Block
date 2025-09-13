@@ -17,7 +17,7 @@ const productsData = [
                   word in classical literature, discovered the undoubtable
                   source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290771/hongon.block_i1f41f.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954147/standard-b_1_nndaso.png",
   },
   {
     name: "plateBlock",
@@ -31,7 +31,7 @@ const productsData = [
                   word in classical literature, discovered the undoubtable
                   source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954146/wall-panel-type_1_liwwcf.png",
   },
     {
     name: "plateBlock",
@@ -45,7 +45,7 @@ const productsData = [
                   word in classical literature, discovered the undoubtable
                   source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954146/Starken_Floor_Panel_1_p1slhu.png",
   },
     {
     name: "plateBlock",
@@ -59,7 +59,38 @@ const productsData = [
                   word in classical literature, discovered the undoubtable
                   source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954146/jumbo-block_1_tbb8v6.png",
+  },
+];
+
+const OtherProductsData = [
+  {
+    name: "Zamaska",
+    title: "Замаска",
+    description: `Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur,
+                  from a Lorem Ipsum passage, and going through the cites of the
+                  word in classical literature, discovered the undoubtable
+                  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
+    image:
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954097/%D0%97%D0%B0%D0%BC%D0%B0%D1%81%D0%BA%D0%B0_1_ksrry3.png",
+  },
+  {
+    name: "Tsavuu",
+    title: "Цавуу",
+    description: `Contrary to popular belief, Lorem Ipsum is not simply random
+                  text. It has roots in a piece of classical Latin literature
+                  from 45 BC, making it over 2000 years old. Richard McClintock,
+                  a Latin professor at Hampden-Sydney College in Virginia,
+                  looked up one of the more obscure Latin words, consectetur,
+                  from a Lorem Ipsum passage, and going through the cites of the
+                  word in classical literature, discovered the undoubtable
+                  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
+    image:
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954097/%D0%A6%D0%B0%D0%B2%D1%83%D1%83_1_fig2oj.png",
   },
 ];
 const logos = [
@@ -81,46 +112,46 @@ const logos = [
 ];
 const featureData = [
   {
-    title: "ДАВУУ ТАЛ",
+    title: "Хөнгөн жинтэй",
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/1_gcdhdx.png",
   },
   {
-    title: "ДАВУУ ТАЛ",
+    title: "Дулаан тусгаарлалт сайнн",
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/1_2_xuho2i.png",
   },
   {
-    title: "ДАВУУ ТАЛ",
+    title: "Галд тэсвэртэй",
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/1_3_xt5onp.png",
   },
   {
-    title: "ДАВУУ ТАЛ",
+    title: "Дуу тусгаарлалт",
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/2_1_prtzwg.png",
   },
   {
-    title: "ДАВУУ ТАЛ",
+    title: "Нарийн хэмжээстэй",
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/2_2_fjte8j.png",
   },
   {
-    title: "ДАВУУ ТАЛ",
+    title: "Байгальд ээлтэй",
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1723290780/havtan.block_jc8atl.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/2_3_npkjxb.png",
   },
 ];
 const carouselData = {
@@ -170,8 +201,13 @@ const newsData = [
     image: "newsImage-3.png",
   },
 ];
+
+
+
+
 export const DataProvider = ({ children }) => {
   const [products, setProducts] = useState(productsData);
+  const [OtherProducts, setOtherProducts] = useState(OtherProductsData);
   const [features, setFeatures] = useState(featureData);
   const [carousel, setCarousel] = useState(carouselData);
   const [logosUrl, setLogosUrl] = useState(logos);
@@ -189,7 +225,7 @@ export const DataProvider = ({ children }) => {
   // }, []);
   return (
     <DataContext.Provider
-      value={{ products, news, features, carousel, logosUrl }}
+      value={{ products, OtherProducts, news, features, carousel, logosUrl }}
     >
       {children}
     </DataContext.Provider>

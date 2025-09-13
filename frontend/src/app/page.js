@@ -1,4 +1,4 @@
-import { Carousel, Contacts, News, Products } from "@/components";
+import { Carousel, Contacts, News, Products, Video } from "@/components";
 
 
 export default function Home() {
@@ -6,8 +6,9 @@ export default function Home() {
     <div className="w-full mx-auto h-full">
       <Carousel />
       <Products />
+      <Video />
       <Contacts />
-      <News />
+      
     </div>
   );
 }

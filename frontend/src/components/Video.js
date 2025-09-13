@@ -9,7 +9,7 @@ export const Video = () => {
     "https://res.cloudinary.com/your-cloud-name/raw/upload/v1234567890/captions.vtt"; // Replace with your Cloudinary captions URL
   return (
     <Container>
-      <div className="w-full h-56 sm:96 xl:h-[550px] overflow-hidden">
+      <div className="w-full pt-24 h-56 sm:h-96 xl:h-[713px] overflow-hidden">
         <iframe
           width="100%"
           height="100%"

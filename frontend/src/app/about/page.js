@@ -1,11 +1,11 @@
-import { About, Contacts, Carousel, Products } from "@/components";
+import { About, Contacts, Carousel, Products, Video } from "@/components";
 
 export default function AboutPage() {
   return (
     <>
       <Carousel />
       <About />
-      <Products />
+    <Video/>
       <Contacts />
     </>
   );

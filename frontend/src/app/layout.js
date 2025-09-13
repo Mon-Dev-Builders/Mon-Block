@@ -17,7 +17,6 @@ export default function RootLayout({ children }) {
           <div className="shadow-2xl w-[1440px] m-auto">
             <Header />
             {children}
-            <Video />
             <Footer />
           </div>
         </DataProvider>
