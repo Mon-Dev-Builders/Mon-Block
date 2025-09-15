@@ -7,12 +7,12 @@ export const News = () => {
   const { news } = useData();
   return (
     <Container>
-      <div className="w-full h-[250px]  2xl:h-[810px]  lg:h-[620px] sm:h-[390px] flex flex-col items-center justify-between my-10">
-        <h3 className="md:text-2xl sm:text-xl xl:text-4xl 2xl:text-5xl text-xs font-medium text-[#000000] ">
+      <div className="w-full h-[200px] sm:h-[390px] lg:h-[620px] 2xl:h-[810px] flex flex-col items-center justify-between my-6 sm:my-10">
+        <h3 className="text-base sm:text-xl md:text-2xl xl:text-4xl 2xl:text-5xl font-medium text-[#000000]">
           Мэдээ, мэдээлэл
         </h3>
-        <div className="w-screen h-full overflow-x-auto">
-          <div className="w-fit h-full flex items-center 2xl:gap-12 gap-4 px-5">
+        <div className="w-full h-full overflow-x-auto">
+          <div className="w-fit h-full flex items-center gap-2 sm:gap-4 2xl:gap-12 px-2 sm:px-5">
             {news.map((card) => (
               <NewsCard
                 key={card.id}

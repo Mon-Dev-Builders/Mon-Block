@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={montserrat.className}>
         <DataProvider>
-          <div className="shadow-2xl w-[1440px] m-auto">
+          <div className="shadow-2xl w-full max-w-[1440px] mx-auto">
             <Header />
             {children}
             <Footer />
