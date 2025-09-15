@@ -5,7 +5,7 @@ export default function ProductPage() {
     <>
       <Carousel />
       <ProductsDetail />
-      <Features />
+
       <Contacts />
     </>
   );
