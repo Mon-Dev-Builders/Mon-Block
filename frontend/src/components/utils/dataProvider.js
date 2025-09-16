@@ -8,58 +8,81 @@ const productsData = [
   {
     name: "Block",
     title: "Блок",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage, and going through the cites of the
-                  word in classical literature, discovered the undoubtable
-                  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
+    subtitle: "Автоклавын хийт бетон",
+    description: `Бүтээгдэхүүний уртын хэмжээ нь хэв хашмалын өндрийн хэмжээс (600mm), бүтээгдэхүүний өндрийн хэмжээ (250mm) нь босоо зүсэлтийн хэмжээ  (Энэ нь MONBLOX блокийн хувьд тогтмол хэмжээс) -гээр тодорхойлогдох бөгөөд Бүтээгдэхүүний өргөний хэмжээ (75-500mm) нь  массын босоо  зүсэлтийн хэмжээгээр тодорхойлогдоно.`,
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954147/standard-b_1_nndaso.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758010880/standard-b_1_pqmfzm.png",
+    // Per-product table groups
+    table: [
+      {
+        size: "600x250 мм",
+        rows: [
+          { width: 75, qty: 128, vol: 1.44 },
+          { width: 100, qty: 96, vol: 1.44 },
+          { width: 125, qty: 72, vol: 1.35 },
+          { width: 150, qty: 64, vol: 1.44 },
+          { width: 200, qty: 48, vol: 1.44 },
+          { width: 250, qty: 32, vol: 1.2 },
+          { width: 300, qty: 32, vol: 1.44 },
+          { width: 375, qty: 24, vol: 1.35 },
+          { width: 500, qty: 16, vol: 1.2 },
+        ],
+      },
+    ],
   },
   {
     name: "plateBlock",
     title: "Ханын хавтан",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage, and going through the cites of the
-                  word in classical literature, discovered the undoubtable
-                  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
+    subtitle: "Автоклавын хийт бетон",
+    description: `MONBLOX хучилтын хавтан нь ханын хавтантай харьцуулахад өндөрийн хэмжээс нь зузаан хүчитгэлийн хувьд ханын хавтангаас их хэмжээтэй  хүчитгэл хэрэглэнэ.`,
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954146/wall-panel-type_1_liwwcf.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758010880/wall-panel-type_1_ggqzeb.png",
+    table: [
+      {
+        size: "4000x600 мм",
+        rows: [
+          { width: 100, qty: 24, vol: 5.76 },
+          { width: 125, qty: 18, vol: 5.4 },
+          { width: 150, qty: 16, vol: 5.76 },
+          { width: 200, qty: 18, vol: 5.76 },
+        ],
+      },
+    ],
   },
-    {
+  {
     name: "plateBlock",
     title: "Хучилтын хавтан",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage, and going through the cites of the
-                  word in classical literature, discovered the undoubtable
-                  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
+    description: `MONBLOX хучилтын хавтан нь ханын хавтантай харьцуулахад өндөрийн хэмжээс нь зузаан хүчитгэлийн хувьд ханын хавтангаас их хэмжээтэй  хүчитгэл хэрэглэнэ.`,
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954146/Starken_Floor_Panel_1_p1slhu.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758010880/Starken_Floor_Panel_1_av6enp.png",
+    table: [
+      {
+        size: "4000x600 мм",
+        rows: [
+          { width: 150, qty: 16, vol: 5.76 },
+          { width: 200, qty: 12, vol: 5.76 },
+          { width: 250, qty: 8, vol: 4.8 },
+        ],
+      },
+    ],
   },
-    {
+  {
     name: "plateBlock",
     title: "Гулдмай",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage, and going through the cites of the
-                  word in classical literature, discovered the undoubtable
-                  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
+    description: `Гулдмай нь барилгын төрөл бүрийн өрөг, хана дүүргэлт, дотор ханын булан зэргийг  гаргахад тохиромжтой бөгөөд үндсэн блокийн хэмжээгээр гарч байгаа нь хоорондын зохицол сайн болох  боломжийг бүрдүүлнэ.`,
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954146/jumbo-block_1_tbb8v6.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954147/standard-b_1_nndaso.png",
+    table: [
+      {
+        size: "1200x600 мм",
+        rows: [
+          { width: 100, qty: 20, vol: 1.44 },
+          { width: 125, qty: 16, vol: 1.44 },
+          { width: 200, qty: 10, vol: 1.44 },
+          { width: 250, qty: 8, vol: 1.44 },
+        ],
+      },
+    ],
   },
 ];
 
@@ -67,30 +90,16 @@ const OtherProductsData = [
   {
     name: "Zamaska",
     title: "Замаска",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage, and going through the cites of the
-                  word in classical literature, discovered the undoubtable
-                  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
+    items: ["Гадна хар замаска", "Дотор хар замаска", "Цагаан замаска"],
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954097/%D0%97%D0%B0%D0%BC%D0%B0%D1%81%D0%BA%D0%B0_1_ksrry3.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758006353/zamaskBig_jsdkse.png",
   },
   {
     name: "Tsavuu",
     title: "Цавуу",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage, and going through the cites of the
-                  word in classical literature, discovered the undoubtable
-                  source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33`,
+    items: ["Гадна фассадны цавуу", "Блокны цавуу", "Плитаны цавуу"],
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954097/%D0%A6%D0%B0%D0%B2%D1%83%D1%83_1_fig2oj.png",
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758006352/tsawuuBig_zhbe6q.png",
   },
 ];
 const logos = [
@@ -154,6 +163,43 @@ const featureData = [
       "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/2_3_npkjxb.png",
   },
 ];
+// Uses page data
+const usesData = [
+  {
+    title: "Барилга",
+    description:
+      "AAC блок нь хөнгөн, дулаан тусгаарлалт сайтай, галд тэсвэртэй барилгын материал бөгөөд орчин үеийн барилгын бүхий л салбарт өргөн хэрэглэгддэг.",
+    image:
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758014395/Rectangle_4285_pusz2j.png",
+  },
+  {
+    title: "Худалдааны болон агуулахын барилга",
+    description:
+      "AAC блок нь худалдааны төв, дэлгүүр, агуулах зэрэг том оврын барилгын хананд төгс тохирно. Энэ нь хөнгөн жинтэй, бат бөх, галд тэсвэртэй, дулаан тусгаарлах өндөр үзүүлэлттэй учраас барилгын нийт өртгийг бууруулж, ашиглалтын зардлыг хэмнэдэг.",
+    commonUses: [
+      "Супермаркет, дэлгүүр, хүнсний захын хана",
+      "Ложистик, түгээлтийн төвийн агуулахын хана",
+      "Даацын бус дотор хана, хуваалт",
+      "Дулаан тусгаарлалт шаардсан агуулах, сэрүүн өрөө",
+    ],
+    image:
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758014395/Rectangle_4286_icrggb.png",
+  },
+  {
+    title: "Орон сууц",
+    description:
+      "AAC блок нь стандарт блоктой харьцуулахад илүү их ачааллыг тэсвэрлэж, өндөр дулаан тусгаарлалт, илүү сайн дуу чимээ тусгаарлагчаар хангадаг. Энэ нь мөн бат бөх, бат бөх чанарыг хадгалдаг бөгөөд энэ нь барилга байгууламж барих, түүний дараагийн ашиглалттай холбоотой зардлыг бууруулдаг. \n\nОлон давхар орон сууцны барилгад агааржуулсан бетоныг ашиглах нь хүрээний технологитой холбоотой хамгийн оновчтой шийдлүүдийн нэг бөгөөд түүний шинж чанар нь янз бүрийн шалгуураар ялгагдана. Энгийн байдал - нэмэлт хүчин чармайлтгүйгээр агаарын блокыг янз бүрийн хэрэгслээр боловсруулахад хялбар байдаг. Хөнгөн байдал - барилгын ажлын зардлыг бууруулж, логистикийг сайжруулдаг. Гал тэсвэрлэх чадвар - агаарын блок нь галд шууд өртөхөд 4 цагийн турш тэсвэрлэх чадвартай бөгөөд анхны бүтэцээ хадгалдаг. Эрчим хүчний хэмнэлт - өндөр эрчим хүчний хэмнэлттэй, 20 см зузаантай агаарын блок нь барилгын ашиглалтын зайг хэмнэхэд тусалдаг. \n\nЭнгийн байдал - нэмэлт хүчин чармайлтгүйгээр агаарын блокыг янз бүрийн хэрэгслээр боловсруулахад хялбар байдаг.Хөнгөн байдал - барилгын ажлын зардлыг бууруулж, логистикийг сайжруулдаг, Гал тэсвэрлэх чадвар - агаарын блок нь галд шууд өртөхөд 4 цагийн турш тэсвэрлэх чадвартай бөгөөд анхны бүтэцээ хадгалдаг. ",
+    image:
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758014395/Rectangle_4287_bqelm9.png",
+  },
+  {
+    title: "Амины орон сууц",
+    description:
+      "Агаарын блок нь хувийн байшин барихад шаардагдах шалгуурыг бүрэн хангаж, гадна болон дотоод хана барих, мөн хуваалт барихад ашиглагддаг. \n\nYtong агаар блокоор барьсан байшингийн гол давуу талуудын нэг нь дулаан тусгаарлалт өндөртэй бөгөөд энэ нь нийтийн үйлчилгээний төлбөрийг 40% хүртэл бууруулах боломжийг олгодог. \n\nАгаарын блокийн шинж чанарууд нь өвлийн улиралд байшингийн дулааныг хадгалахад тусалдаг бөгөөд зуны улиралд байшин доторх сэрүүн байдлыг уртасгадаг. Барилгын блок үйлдвэрлэх өндөр технологийн процесс нь материалын бат бөх чанарыг ихээхэн нэмэгдүүлж, түүний бүх шинж чанарыг удаан хугацаанд хадгалдаг. \n\nблокийн том хэмжээ, хөнгөн жин нь барилгын ажлын цаг, хөдөлмөрийн зардлыг 2 дахин багасгахад тусалдаг.",
+    image:
+      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758014395/Rectangle_4288_qg8swk.png",
+  },
+];
 const carouselData = {
   title: ["ИЛҮҮ ХЯМД", "ИЛҮҮ ЧАНАРТАЙГ"],
   description: "ТАНД ХҮРГЭНЭ",
@@ -168,42 +214,63 @@ const newsData = [
     id: 1,
     date: "2024-08-05",
     title: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
+    content: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
     image: "newsImage-1.png",
   },
   {
     id: 2,
     date: "2024-08-05",
     title: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
+    content: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
     image: "newsImage-2.png",
   },
   {
     id: 3,
     date: "2024-08-05",
     title: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
+    content: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
     image: "newsImage-3.png",
   },
   {
     id: 4,
     date: "2024-08-05",
     title: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
+    content: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
     image: "newsImage-1.png",
   },
   {
     id: 5,
     date: "2024-08-05",
     title: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
+    content: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
     image: "newsImage-2.png",
   },
   {
     id: 6,
     date: "2024-08-05",
     title: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
+    content: "Блок дулаан тусгаарлах чадвар бусад дүүргэлтийн материалаас илүү",
     image: "newsImage-3.png",
   },
 ];
 
-
-
+// Products detail table data (grouped). This enables rendering the spec table via loops.
+const productTableData = [
+  {
+    size: "600x250 мм",
+    rows: [
+      { width: 75, qty: 128, vol: 1.44 },
+      { width: 100, qty: 96, vol: 1.44 },
+      { width: 125, qty: 72, vol: 1.35 },
+      { width: 150, qty: 64, vol: 1.44 },
+      { width: 200, qty: 48, vol: 1.44 },
+      { width: 250, qty: 32, vol: 1.2 },
+      { width: 300, qty: 32, vol: 1.44 },
+      { width: 375, qty: 24, vol: 1.35 },
+      { width: 500, qty: 16, vol: 1.2 },
+    ],
+  },
+];
 
 export const DataProvider = ({ children }) => {
   const [products, setProducts] = useState(productsData);
@@ -212,6 +279,8 @@ export const DataProvider = ({ children }) => {
   const [carousel, setCarousel] = useState(carouselData);
   const [logosUrl, setLogosUrl] = useState(logos);
   const [news, setNews] = useState(newsData);
+  const [productTable, setProductTable] = useState(productTableData);
+  const [uses, setUses] = useState(usesData);
   // useEffect(() => {
   //   const getProduct = async () => {
   //     try {
@@ -225,7 +294,16 @@ export const DataProvider = ({ children }) => {
   // }, []);
   return (
     <DataContext.Provider
-      value={{ products, OtherProducts, news, features, carousel, logosUrl }}
+      value={{
+        products,
+        OtherProducts,
+        news,
+        features,
+        carousel,
+        logosUrl,
+        productTable,
+        uses,
+      }}
     >
       {children}
     </DataContext.Provider>

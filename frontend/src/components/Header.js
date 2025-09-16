@@ -9,7 +9,7 @@ const paths = [
     name: "Нүүр",
     path: "/",
   },
-    {
+  {
     name: "Бидний тухай",
     path: "/about",
   },
@@ -17,9 +17,9 @@ const paths = [
     name: "Бүтээгдэхүүн",
     path: "/product",
   },
-    {
+  {
     name: "Хэрэглээ",
-    path: "/product",
+    path: "/uses",
   },
   {
     name: "Мэдээ, Мэдээлэл",
@@ -34,15 +34,15 @@ export const Header = () => {
     <Container>
       <div className="relative z-50  w-full px-0 pt-8 pb-8 bg-white xl:shadow-2xl xl:pt-16 xl:px-0">
         <div className="max-w-[1148px]  mx-auto flex justify-between text-[12px]">
-      <Link href="/">
-  <Image
-    src="/headLogo.png"
-    alt="Logo"
-    width={235}
-    height={56} // (12px ≈ 56px, 14px ≈ 64px)
-    className="w-[235px] sm:w-[235px] xl:w-[235px] h-9 sm:h-12 xl:h-14 object-contain"
-  />
-</Link>
+          <Link href="/">
+            <Image
+              src="/headLogo.png"
+              alt="Logo"
+              width={235}
+              height={56} // (12px ≈ 56px, 14px ≈ 64px)
+              className="w-[235px] sm:w-[235px] xl:w-[235px] h-9 sm:h-12 xl:h-14 object-contain"
+            />
+          </Link>
           <div className="sm:flex w-[28rem] xl:w-[688px] justify-between items-center text-base xl:text-[20px] hidden ">
             {paths.map((item, index) => (
               <Link href={item.path} key={index}>
@@ -56,20 +56,20 @@ export const Header = () => {
               </Link>
             ))}
           </div>
-<div className="flex items-center">
-  <button
-    onClick={() => router.push("/login")}
-    style={{
-      backgroundColor:
-        pathname === "/login" || pathname === "/register"
-          ? "#C81127"
-          : "#002672",
-    }}
-    className="hidden px-8 py-1 text-sm text-white xl:px-10 xl:text-base h-fit sm:flex rounded-2xl"
-  >
-    Нэвтрэх
-  </button>
-</div>
+          <div className="flex items-center">
+            <button
+              onClick={() => router.push("/register")}
+              style={{
+                backgroundColor:
+                  pathname === "/login" || pathname === "/register"
+                    ? "#002672"
+                    : "#002672",
+              }}
+              className="hidden px-8 py-1 text-sm text-white xl:px-10 xl:text-base h-fit sm:flex rounded-2xl"
+            >
+              Нэвтрэх
+            </button>
+          </div>
           <div className="flex gap-2 sm:hidden">
             <ProfileIcon pathname={pathname} router={router} />
             <MenuIcon setSide={setSide} />

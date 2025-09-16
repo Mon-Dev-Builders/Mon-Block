@@ -12,6 +12,7 @@ export default function NewsPage() {
     <>
       <Carousel />
       <GridNews />
+      <Video />
       <Contacts />
     </>
   );

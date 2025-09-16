@@ -1,6 +1,9 @@
 "use client";
 import { Container } from "./assets";
 import { IoArrowForwardOutline } from "react-icons/io5";
+import { FaFacebook } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+import Link from "next/link";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { useState } from "react";
@@ -25,80 +28,64 @@ export const RegisterContent = () => {
     registerForm.submitCount > 0 && registerForm.errors[field];
   return (
     <Container>
-      <div className="flex flex-col w-96 m-auto my-48 gap-8">
-        <form onSubmit={registerForm.handleSubmit} action="">
-          <div className="flex flex-col gap-6">
-            {isContinue ? (
-              <div className="space-y-2">
-                <label htmlFor="">Нууц үг</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Нууц үгээ оруулна уу"
-                  className="w-full px-4 py-3 border rounded-xl text-sm"
-                  onChange={registerForm.handleChange}
-                  onBlur={registerForm.handleBlur}
-                  value={registerForm.values.password}
-                />
-                {showError("email") ? (
-                  <label className="text-red-600 text-xs text-left">
-                    *{registerForm.errors.password}
-                  </label>
-                ) : null}
-              </div>
-            ) : (
-              <>
-                <div className="space-y-2">
-                  <label htmlFor="">Бүртгүүлэх</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="И-мэйл хаягаа оруулна уу"
-                    className="w-full px-4 py-3 border rounded-xl text-sm"
-                    onChange={registerForm.handleChange}
-                    onBlur={registerForm.handleBlur}
-                    value={registerForm.values.email}
-                  />
-                  {showError("email") ? (
-                    <label className="text-red-600 text-xs text-left">
-                      *{registerForm.errors.email}
-                    </label>
-                  ) : null}
-                </div>
-                {mailConfig ? (
-                  <div className="space-y-2">
-                    <label htmlFor="">
-                      И-мэйл хаягт ирсэн кодыг оруулна уу
-                    </label>
-                    <input
-                      type="password"
-                      id="password"
-                      name="password"
-                      placeholder="Нууц үгээ оруулна уу"
-                      className="w-full px-4 py-3 border rounded-xl text-sm"
-                    />
-                    <div className="text-end text-sm">
-                      Дахин илгээх бол{" "}
-                      <button className="text-[#001ED3]">энд дарна</button> уу
-                    </div>
-                  </div>
-                ) : null}
-              </>
-            )}
+      <div className="w-full md:w-[557px] mx-auto px-4 md:px-0 py-10 md:py-16">
+        <form onSubmit={registerForm.handleSubmit} className="flex flex-col gap-6">
+          {/* Title */}
+          <label className="text-base md:text-lg text-[#0B0B0B]">Нэвтрэх</label>
 
-            <button
-              onClick={() =>{!registerForm.errors["email"] && registerForm.submitCount > 0
-                ? setMailConfig(true)
+          {/* Email */}
+          <div className="space-y-2">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="И-мэйл хаягаа оруулна уу"
+              className="w-full px-4 py-3 border rounded-xl text-sm"
+              onChange={registerForm.handleChange}
+              onBlur={registerForm.handleBlur}
+              value={registerForm.values.email}
+            />
+            {showError("email") ? (
+              <label className="text-red-600 text-xs text-left">
+                *{registerForm.errors.email}
+              </label>
+            ) : null}
+          </div>
+
+          {/* Continue Button */}
+          <button
+            onClick={() =>
+              !registerForm.errors["email"] && registerForm.submitCount > 0
+                ? setIsContinue(true)
                 : null
-            
-            }}
-              type="submit"
-              className="rounded-xl flex items-center justify-center gap-3 bg-[#002672] text-white px-4 py-3"
-            >
-              {mailConfig && isContinue ? "Бүртгүүлэх" : "Үргэжлүүлэх"}
-              <IoArrowForwardOutline className="w-5 h-5" />
+            }
+            type="submit"
+            className="rounded-xl flex items-center justify-center gap-3 bg-[#0B1673] md:bg-[#002672] text-white px-4 py-3"
+          >
+            Үргэжлүүлэх
+            <IoArrowForwardOutline className="w-5 h-5" />
+          </button>
+
+          {/* New user link */}
+          <div className="text-center space-x-2">
+            <span>Шинэ хэрэглэгч</span>
+            <Link href="/register" className="text-[#FF0000] text-sm underline underline-offset-2">
+              Бүртгүүлэх
+            </Link>
+          </div>
+
+          {/* Divider */}
+          <div className="text-center text-gray-300">ЭСВЭЛ</div>
+
+          {/* Social buttons */}
+          <div className="flex flex-col gap-4">
+            <button type="button" className="bg-[#4285F4] items-center justify-center gap-4 flex py-3 rounded-xl text-white">
+              <FaFacebook className="w-6 h-6" />
+              Facebook -ээр нэвтрэх
+            </button>
+            <button type="button" className="border border-black flex items-center justify-center gap-4 py-3 rounded-xl">
+              <FcGoogle className="w-6 h-6" />
+              Gmail -ээр нэвтрэх
             </button>
           </div>
         </form>
