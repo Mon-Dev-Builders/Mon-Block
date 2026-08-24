@@ -18,7 +18,7 @@ export const MenuIcon = ({ setSide }) => {
 export const ProfileIcon = ({ pathname, router }) => {
   return (
     <svg
-      onClick={() => router.push("/login")}
+      onClick={() => router.push("/register")}
       width="20"
       height="20"
       viewBox="0 0 17 16"
@@ -30,7 +30,7 @@ export const ProfileIcon = ({ pathname, router }) => {
         cx="8.5"
         cy="4"
         r="3.5"
-        stroke={pathname === "/login" ? "#C81127" : "#222222"}
+        stroke={pathname === "/register" ? "#C81127" : "#222222"}
         strokeLinecap="round"
       />
       <path

@@ -31,7 +31,7 @@ const productsData = [
     ],
   },
   {
-    name: "plateBlock",
+    name: "wallPanel",
     title: "Ханын хавтан",
     subtitle: "Автоклавын хийт бетон",
     description: `MONBLOX хучилтын хавтан нь ханын хавтантай харьцуулахад өндөрийн хэмжээс нь зузаан хүчитгэлийн хувьд ханын хавтангаас их хэмжээтэй  хүчитгэл хэрэглэнэ.`,
@@ -50,7 +50,7 @@ const productsData = [
     ],
   },
   {
-    name: "plateBlock",
+    name: "floorPanel",
     title: "Хучилтын хавтан",
     description: `MONBLOX хучилтын хавтан нь ханын хавтантай харьцуулахад өндөрийн хэмжээс нь зузаан хүчитгэлийн хувьд ханын хавтангаас их хэмжээтэй  хүчитгэл хэрэглэнэ.`,
     image:
@@ -67,7 +67,7 @@ const productsData = [
     ],
   },
   {
-    name: "plateBlock",
+    name: "beam",
     title: "Гулдмай",
     description: `Гулдмай нь барилгын төрөл бүрийн өрөг, хана дүүргэлт, дотор ханын булан зэргийг  гаргахад тохиромжтой бөгөөд үндсэн блокийн хэмжээгээр гарч байгаа нь хоорондын зохицол сайн болох  боломжийг бүрдүүлнэ.`,
     image:
@@ -104,17 +104,13 @@ const OtherProductsData = [
 ];
 const logos = [
   "https://tavanbogd.com/_next/image?url=https%3A%2F%2Fadmin-mn.tavanbogd.com%2Fuploads%2FUntitled_design_3_5849002744.png&w=3840&q=75",
-  ,
   "https://www.ncd.mn/storage/settings/June2023/oupMehMyfY0GIHdCyKuX.png",
-  ,
   "https://cdn.greensoft.mn/uploads/site/530/photos/block/h_20220722115531_b2f822be9b5ac4833c84b93934f95407.png",
   "https://www.asiancd.mn/assets/img/logo_new.png",
   "https://scontent.fuln2-2.fna.fbcdn.net/v/t39.30808-6/288547167_498099288780217_408522637966623959_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Gr_SKRj5EBYQ7kNvgH-DU79&_nc_ht=scontent.fuln2-2.fna&oh=00_AYBzKIY_d92oaqGhPOIw4iVy0JNcShbVJNMaeJSRnNsKEw&oe=66D45CF5",
   "https://img.barilga.mn/140x140,sc,swv5D0nbqsYc10h82j4Vx5pSBBEclPGS95tvqpssA0Qo/files/8a8519336f694e7184b006769174a656.png?d=0",
   "https://tavanbogd.com/_next/image?url=https%3A%2F%2Fadmin-mn.tavanbogd.com%2Fuploads%2FUntitled_design_3_5849002744.png&w=3840&q=75",
-  ,
   "https://www.ncd.mn/storage/settings/June2023/oupMehMyfY0GIHdCyKuX.png",
-  ,
   "https://cdn.greensoft.mn/uploads/site/530/photos/block/h_20220722115531_b2f822be9b5ac4833c84b93934f95407.png",
   "https://www.asiancd.mn/assets/img/logo_new.png",
   "https://scontent.fuln2-2.fna.fbcdn.net/v/t39.30808-6/288547167_498099288780217_408522637966623959_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Gr_SKRj5EBYQ7kNvgH-DU79&_nc_ht=scontent.fuln2-2.fna&oh=00_AYBzKIY_d92oaqGhPOIw4iVy0JNcShbVJNMaeJSRnNsKEw&oe=66D45CF5",

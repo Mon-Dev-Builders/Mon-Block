@@ -30,8 +30,9 @@ export const ProductsDetail = () => {
         {/* Зураг + Текст */}
         {(Array.isArray(products) ? products : []).map((product, idx) => (
           <div
-            key={product?.id ?? product?.title ?? idx}
-            className="w-full mt-10 md:mt-20"
+            key={product?.name ?? product?.title ?? idx}
+            id={product?.name}
+            className="w-full mt-10 md:mt-20 scroll-mt-24"
           >
             {/* Mobile: Image left, Title & Subtitle right; Description below */}
             <div className="md:hidden w-full">

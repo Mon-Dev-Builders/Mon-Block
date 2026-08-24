@@ -31,7 +31,7 @@ export const RegisterContent = () => {
       <div className="w-full md:w-[557px] mx-auto px-4 md:px-0 py-10 md:py-16">
         <form onSubmit={registerForm.handleSubmit} className="flex flex-col gap-6">
           {/* Title */}
-          <label className="text-base md:text-lg text-[#0B0B0B]">Нэвтрэх</label>
+          <label className="text-base md:text-lg text-[#0B0B0B]">Бүртгүүлэх</label>
 
           {/* Email */}
           <div className="space-y-2">
@@ -66,11 +66,11 @@ export const RegisterContent = () => {
             <IoArrowForwardOutline className="w-5 h-5" />
           </button>
 
-          {/* New user link */}
+          {/* Existing user link */}
           <div className="text-center space-x-2">
-            <span>Шинэ хэрэглэгч</span>
-            <Link href="/register" className="text-[#FF0000] text-sm underline underline-offset-2">
-              Бүртгүүлэх
+            <span>Бүртгэлтэй хэрэглэгч</span>
+            <Link href="/login" className="text-[#FF0000] text-sm underline underline-offset-2">
+              Нэвтрэх
             </Link>
           </div>
 

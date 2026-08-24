@@ -24,7 +24,8 @@ export const LoginContent = () => {
     }),
   });
   const showError = (field) =>
-    loginForm.submitCount > 0 && loginForm.errors[field];
+    (loginForm.touched[field] || loginForm.submitCount > 0) &&
+    loginForm.errors[field];
   return (
     <Container>
       <div className="flex w-[557px] m-auto bg-green-200 justify-center items-center">
@@ -66,17 +67,18 @@ export const LoginContent = () => {
                   />
                   <div className="text-end text-sm">
                     Нууц үгээ мартсан бол{" "}
-                    <button className="text-[#001ED3]">энд дарна</button> уу
+                    <button type="button" className="text-[#001ED3]">энд дарна</button> уу
                   </div>
                 </>
               ) : null}
               <button
-                onClick={() =>
-                  !loginForm.errors["email"] && loginForm.submitCount > 0
-                    ? setIsContinue(true)
-                    : null
-                }
-                type="submit"
+                onClick={async () => {
+                  if (isContinue) return;
+                  loginForm.setFieldTouched("email", true, false);
+                  const errors = await loginForm.validateForm();
+                  if (!errors.email) setIsContinue(true);
+                }}
+                type={isContinue ? "submit" : "button"}
                 className="rounded-xl flex items-center justify-center gap-3 bg-[#002672] text-white px-4 py-3"
               >
                 {isContinue ? "Нэвтрэх" : "Үргэжлүүлэх"}
