@@ -6,6 +6,7 @@ export * from "./Contacts";
 export * from "./Features";
 export * from "./News";
 export * from "./Products";
+export * from "./Calculator";
 export * from "./Video";
 export * from "./ProductsDetail";
 export * from "./Login";

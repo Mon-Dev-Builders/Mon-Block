@@ -268,6 +268,36 @@ const productTableData = [
   },
 ];
 
+// Тооцоолуурын өгөгдөл: блокны хэмжээ (мм) ба 1 м³-ийн үнэ (₮)
+const blockSizesData = [
+  {
+    name: "120x300x600",
+    label: "120мм x 300мм x 600мм",
+    thickness: 120,
+    height: 300,
+    length: 600,
+  },
+  {
+    name: "200x300x600",
+    label: "200мм x 300мм x 600мм",
+    thickness: 200,
+    height: 300,
+    length: 600,
+  },
+  {
+    name: "240x300x600",
+    label: "240мм x 300мм x 600мм",
+    thickness: 240,
+    height: 300,
+    length: 600,
+  },
+];
+
+const blockPriceData = {
+  withVat: 308000,
+  withoutVat: 280000,
+};
+
 export const DataProvider = ({ children }) => {
   const [products, setProducts] = useState(productsData);
   const [OtherProducts, setOtherProducts] = useState(OtherProductsData);
@@ -277,6 +307,8 @@ export const DataProvider = ({ children }) => {
   const [news, setNews] = useState(newsData);
   const [productTable, setProductTable] = useState(productTableData);
   const [uses, setUses] = useState(usesData);
+  const [blockSizes, setBlockSizes] = useState(blockSizesData);
+  const [blockPrice, setBlockPrice] = useState(blockPriceData);
   // useEffect(() => {
   //   const getProduct = async () => {
   //     try {
@@ -299,6 +331,8 @@ export const DataProvider = ({ children }) => {
         logosUrl,
         productTable,
         uses,
+        blockSizes,
+        blockPrice,
       }}
     >
       {children}

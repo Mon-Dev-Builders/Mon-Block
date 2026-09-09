@@ -28,12 +28,8 @@ export const LoginContent = () => {
     loginForm.errors[field];
   return (
     <Container>
-      <div className="flex w-[557px] m-auto bg-green-200 justify-center items-center">
-        <div className="flex flex-col">
-          <label htmlFor="">Нэвтрэх</label>
-          <input type="text" className="px-4 w-[300px]" placeholder="И-мэйл хаягаа оруулна уу" />
-        </div>
-        <div className="flex flex-col w-96 m-auto my-48 gap-8">
+      <div className="w-full md:w-[557px] mx-auto px-4 md:px-0 py-10 md:py-16">
+        <div className="flex flex-col w-full gap-8">
           <form onSubmit={loginForm.handleSubmit} action="">
             <div className="flex flex-col gap-4">
               <label htmlFor="">Нэвтрэх</label>
@@ -114,4 +110,3 @@ export const LoginContent = () => {
     </Container>
   );
 };
-//a
