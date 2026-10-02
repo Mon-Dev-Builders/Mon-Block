@@ -7,11 +7,11 @@ const DataContext = createContext();
 const productsData = [
   {
     name: "Block",
-    title: "Блок",
+    title: "Хөнгөн шохойн блок",
     subtitle: "Автоклавын хийт бетон",
     description: `Бүтээгдэхүүний уртын хэмжээ нь хэв хашмалын өндрийн хэмжээс (600mm), бүтээгдэхүүний өндрийн хэмжээ (250mm) нь босоо зүсэлтийн хэмжээ  (Энэ нь MONBLOX блокийн хувьд тогтмол хэмжээс) -гээр тодорхойлогдох бөгөөд Бүтээгдэхүүний өргөний хэмжээ (75-500mm) нь  массын босоо  зүсэлтийн хэмжээгээр тодорхойлогдоно.`,
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758010880/standard-b_1_pqmfzm.png",
+      "/hongonBlock.png",
     // Per-product table groups
     table: [
       {
@@ -30,60 +30,6 @@ const productsData = [
       },
     ],
   },
-  {
-    name: "wallPanel",
-    title: "Ханын хавтан",
-    subtitle: "Автоклавын хийт бетон",
-    description: `MONBLOX хучилтын хавтан нь ханын хавтантай харьцуулахад өндөрийн хэмжээс нь зузаан хүчитгэлийн хувьд ханын хавтангаас их хэмжээтэй  хүчитгэл хэрэглэнэ.`,
-    image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758010880/wall-panel-type_1_ggqzeb.png",
-    table: [
-      {
-        size: "4000x600 мм",
-        rows: [
-          { width: 100, qty: 24, vol: 5.76 },
-          { width: 125, qty: 18, vol: 5.4 },
-          { width: 150, qty: 16, vol: 5.76 },
-          { width: 200, qty: 18, vol: 5.76 },
-        ],
-      },
-    ],
-  },
-  {
-    name: "floorPanel",
-    title: "Хучилтын хавтан",
-    description: `MONBLOX хучилтын хавтан нь ханын хавтантай харьцуулахад өндөрийн хэмжээс нь зузаан хүчитгэлийн хувьд ханын хавтангаас их хэмжээтэй  хүчитгэл хэрэглэнэ.`,
-    image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758010880/Starken_Floor_Panel_1_av6enp.png",
-    table: [
-      {
-        size: "4000x600 мм",
-        rows: [
-          { width: 150, qty: 16, vol: 5.76 },
-          { width: 200, qty: 12, vol: 5.76 },
-          { width: 250, qty: 8, vol: 4.8 },
-        ],
-      },
-    ],
-  },
-  {
-    name: "beam",
-    title: "Гулдмай",
-    description: `Гулдмай нь барилгын төрөл бүрийн өрөг, хана дүүргэлт, дотор ханын булан зэргийг  гаргахад тохиромжтой бөгөөд үндсэн блокийн хэмжээгээр гарч байгаа нь хоорондын зохицол сайн болох  боломжийг бүрдүүлнэ.`,
-    image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756954147/standard-b_1_nndaso.png",
-    table: [
-      {
-        size: "1200x600 мм",
-        rows: [
-          { width: 100, qty: 20, vol: 1.44 },
-          { width: 125, qty: 16, vol: 1.44 },
-          { width: 200, qty: 10, vol: 1.44 },
-          { width: 250, qty: 8, vol: 1.44 },
-        ],
-      },
-    ],
-  },
 ];
 
 const OtherProductsData = [
@@ -92,25 +38,25 @@ const OtherProductsData = [
     title: "Замаска",
     items: ["Гадна хар замаска", "Дотор хар замаска", "Цагаан замаска"],
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758006353/zamaskBig_jsdkse.png",
+      "/zamaskBig.png",
   },
   {
     name: "Tsavuu",
     title: "Цавуу",
     items: ["Гадна фассадны цавуу", "Блокны цавуу", "Плитаны цавуу"],
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758006352/tsawuuBig_zhbe6q.png",
+      "/tsawuuBig.png",
   },
 ];
 const logos = [
-  "https://tavanbogd.com/_next/image?url=https%3A%2F%2Fadmin-mn.tavanbogd.com%2Fuploads%2FUntitled_design_3_5849002744.png&w=3840&q=75",
-  "https://www.ncd.mn/storage/settings/June2023/oupMehMyfY0GIHdCyKuX.png",
+  "/Tavanbogd.webp",
+  "/NCDlogo.svg",
   "https://cdn.greensoft.mn/uploads/site/530/photos/block/h_20220722115531_b2f822be9b5ac4833c84b93934f95407.png",
   "https://www.asiancd.mn/assets/img/logo_new.png",
   "https://scontent.fuln2-2.fna.fbcdn.net/v/t39.30808-6/288547167_498099288780217_408522637966623959_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Gr_SKRj5EBYQ7kNvgH-DU79&_nc_ht=scontent.fuln2-2.fna&oh=00_AYBzKIY_d92oaqGhPOIw4iVy0JNcShbVJNMaeJSRnNsKEw&oe=66D45CF5",
-  "https://img.barilga.mn/140x140,sc,swv5D0nbqsYc10h82j4Vx5pSBBEclPGS95tvqpssA0Qo/files/8a8519336f694e7184b006769174a656.png?d=0",
-  "https://tavanbogd.com/_next/image?url=https%3A%2F%2Fadmin-mn.tavanbogd.com%2Fuploads%2FUntitled_design_3_5849002744.png&w=3840&q=75",
-  "https://www.ncd.mn/storage/settings/June2023/oupMehMyfY0GIHdCyKuX.png",
+  "/Barilga.svg",
+  "/Tavanbogd.webp",
+  "/NCDlogo.svg",
   "https://cdn.greensoft.mn/uploads/site/530/photos/block/h_20220722115531_b2f822be9b5ac4833c84b93934f95407.png",
   "https://www.asiancd.mn/assets/img/logo_new.png",
   "https://scontent.fuln2-2.fna.fbcdn.net/v/t39.30808-6/288547167_498099288780217_408522637966623959_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Gr_SKRj5EBYQ7kNvgH-DU79&_nc_ht=scontent.fuln2-2.fna&oh=00_AYBzKIY_d92oaqGhPOIw4iVy0JNcShbVJNMaeJSRnNsKEw&oe=66D45CF5",
@@ -121,42 +67,42 @@ const featureData = [
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/1_gcdhdx.png",
+      "/feature/1 1.png",
   },
   {
     title: "Дулаан тусгаарлалт сайнн",
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/1_2_xuho2i.png",
+      "/feature/1 2.png",
   },
   {
     title: "Галд тэсвэртэй",
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/1_3_xt5onp.png",
+      "/feature/1 3.png",
   },
   {
     title: "Дуу тусгаарлалт",
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/2_1_prtzwg.png",
+      "/feature/2 1.png",
   },
   {
     title: "Нарийн хэмжээстэй",
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/2_2_fjte8j.png",
+      "/feature/2 2.png",
   },
   {
     title: "Байгальд ээлтэй",
     description:
       "Хүний эрүүл мэнд болон байгаль орчинд ямар нэгэн хор нөлөөгүй",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1756949791/2_3_npkjxb.png",
+      "/feature/2 3.png",
   },
 ];
 // Uses page data
@@ -166,7 +112,7 @@ const usesData = [
     description:
       "AAC блок нь хөнгөн, дулаан тусгаарлалт сайтай, галд тэсвэртэй барилгын материал бөгөөд орчин үеийн барилгын бүхий л салбарт өргөн хэрэглэгддэг.",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758014395/Rectangle_4285_pusz2j.png",
+      "/Rectangle 4285.png",
   },
   {
     title: "Худалдааны болон агуулахын барилга",
@@ -179,30 +125,30 @@ const usesData = [
       "Дулаан тусгаарлалт шаардсан агуулах, сэрүүн өрөө",
     ],
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758014395/Rectangle_4286_icrggb.png",
+      "/Rectangle 4286.png",
   },
   {
     title: "Орон сууц",
     description:
       "AAC блок нь стандарт блоктой харьцуулахад илүү их ачааллыг тэсвэрлэж, өндөр дулаан тусгаарлалт, илүү сайн дуу чимээ тусгаарлагчаар хангадаг. Энэ нь мөн бат бөх, бат бөх чанарыг хадгалдаг бөгөөд энэ нь барилга байгууламж барих, түүний дараагийн ашиглалттай холбоотой зардлыг бууруулдаг. \n\nОлон давхар орон сууцны барилгад агааржуулсан бетоныг ашиглах нь хүрээний технологитой холбоотой хамгийн оновчтой шийдлүүдийн нэг бөгөөд түүний шинж чанар нь янз бүрийн шалгуураар ялгагдана. Энгийн байдал - нэмэлт хүчин чармайлтгүйгээр агаарын блокыг янз бүрийн хэрэгслээр боловсруулахад хялбар байдаг. Хөнгөн байдал - барилгын ажлын зардлыг бууруулж, логистикийг сайжруулдаг. Гал тэсвэрлэх чадвар - агаарын блок нь галд шууд өртөхөд 4 цагийн турш тэсвэрлэх чадвартай бөгөөд анхны бүтэцээ хадгалдаг. Эрчим хүчний хэмнэлт - өндөр эрчим хүчний хэмнэлттэй, 20 см зузаантай агаарын блок нь барилгын ашиглалтын зайг хэмнэхэд тусалдаг. \n\nЭнгийн байдал - нэмэлт хүчин чармайлтгүйгээр агаарын блокыг янз бүрийн хэрэгслээр боловсруулахад хялбар байдаг.Хөнгөн байдал - барилгын ажлын зардлыг бууруулж, логистикийг сайжруулдаг, Гал тэсвэрлэх чадвар - агаарын блок нь галд шууд өртөхөд 4 цагийн турш тэсвэрлэх чадвартай бөгөөд анхны бүтэцээ хадгалдаг. ",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758014395/Rectangle_4287_bqelm9.png",
+      "/Rectangle 4287.png",
   },
   {
     title: "Амины орон сууц",
     description:
       "Агаарын блок нь хувийн байшин барихад шаардагдах шалгуурыг бүрэн хангаж, гадна болон дотоод хана барих, мөн хуваалт барихад ашиглагддаг. \n\nYtong агаар блокоор барьсан байшингийн гол давуу талуудын нэг нь дулаан тусгаарлалт өндөртэй бөгөөд энэ нь нийтийн үйлчилгээний төлбөрийг 40% хүртэл бууруулах боломжийг олгодог. \n\nАгаарын блокийн шинж чанарууд нь өвлийн улиралд байшингийн дулааныг хадгалахад тусалдаг бөгөөд зуны улиралд байшин доторх сэрүүн байдлыг уртасгадаг. Барилгын блок үйлдвэрлэх өндөр технологийн процесс нь материалын бат бөх чанарыг ихээхэн нэмэгдүүлж, түүний бүх шинж чанарыг удаан хугацаанд хадгалдаг. \n\nблокийн том хэмжээ, хөнгөн жин нь барилгын ажлын цаг, хөдөлмөрийн зардлыг 2 дахин багасгахад тусалдаг.",
     image:
-      "https://res.cloudinary.com/dzm85pldh/image/upload/v1758014395/Rectangle_4288_qg8swk.png",
+      "/Rectangle 4288.png",
   },
 ];
 const carouselData = {
   title: ["ИЛҮҮ ХЯМД", "ИЛҮҮ ЧАНАРТАЙГ"],
   description: "ТАНД ХҮРГЭНЭ",
   images: [
-    "https://res.cloudinary.com/dzm85pldh/image/upload/v1724812125/carousel3_soiorf.png",
-    "https://res.cloudinary.com/dzm85pldh/image/upload/v1724812144/carousel2_wprz02.png",
-    "https://res.cloudinary.com/dzm85pldh/image/upload/v1724812150/carousel1_k6q85b.png",
+    "/carousel3.png",
+    "/carousel2.png",
+    "/carousel1.png",
   ],
 };
 const newsData = [

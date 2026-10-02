@@ -50,7 +50,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-8 w-full pl-8 items-start md:items-start text-center">
             <div className="flex items-center justify-center gap-4 md:gap-3">
               <FiPhone className="w-5 h-5 md:w-6 md:h-6 text-black" />
-              <span className="text-lg md:text-lg text-black">7600 7779</span>
+              <span className="text-lg md:text-lg text-black">9900 2454</span>
             </div>
             <div className="flex items-center justify-center gap-4 md:gap-3">
               <MdOutlineEmail className="w-5 h-5 md:w-6 md:h-6 text-black" />

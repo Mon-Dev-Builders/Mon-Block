@@ -15,7 +15,7 @@ export const Products = () => {
         {/* Хэрэгцээт блокоо тооцоолох */}
         <CalculatorButton className="mt-4 xl:mt-0" />
         {/* GRID: зөвхөн энд gap тавина */}
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-[40px] sm:gap-y-[60px] xl:grid-cols-2 xl:gap-x-[69px] xl:gap-y-[102px] w-full max-w-[1007px]">
+        <div className="mt-6 w-full max-w-[469px]">
           {products.map((product) => (
             <Link
               key={product.name}
