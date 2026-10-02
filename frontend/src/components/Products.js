@@ -15,7 +15,7 @@ export const Products = () => {
         {/* Хэрэгцээт блокоо тооцоолох */}
         <CalculatorButton className="mt-4 xl:mt-0" />
         {/* GRID: зөвхөн энд gap тавина */}
-        <div className="mt-6 w-full max-w-[469px]">
+        <div className="mt-6 w-full max-w-[1007px]">
           {products.map((product) => (
             <Link
               key={product.name}
@@ -24,15 +24,15 @@ export const Products = () => {
             >
               <div className="flex flex-col items-center w-full overflow-hidden rounded-xl shadow">
                 {/* Зураг */}
-                <div className="w-full h-44 sm:h-80 xl:h-[231px] rounded-t-xl overflow-hidden bg-[radial-gradient(circle_at_center,_#f9f9f9,_#e5e5e5)]">
+                <div className="w-full h-52 sm:h-[360px] xl:h-[462px] p-6 sm:p-10 rounded-t-xl overflow-hidden bg-[radial-gradient(circle_at_center,_#f9f9f9,_#e5e5e5)]">
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="w-full h-full object-scale-down"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 {/* Бичвэр */}
-                <div className="w-full h-[49px] bg-[#FF0000] flex items-center justify-center text-base text-white sm:text-lg xl:text-4xl rounded-b-xl">
+                <div className="w-full h-[49px] sm:h-[72px] xl:h-[98px] bg-[#FF0000] flex items-center justify-center text-lg text-white sm:text-2xl xl:text-4xl rounded-b-xl">
                   {product.title}
                 </div>
               </div>
